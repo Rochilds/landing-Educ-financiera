@@ -1,0 +1,1204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #222;
+    }
+     header {
+      background: linear-gradient(to right, #007A5E, #00B28A);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero {
+  background: #007A5E; /* o el código de verde que prefieras */
+  padding: 60px 20px;
+}
+
+    .contenedor-hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .texto-hero {
+      flex: 1 1 500px;
+      padding-right: 40px;
+    }
+    .texto-hero h1 {
+      font-size: 2.5rem;
+      color:blanchedalmond;
+      margin-bottom: 20px;
+    }
+    .texto-hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px; 
+       color: blanchedalmond; 
+    }
+    .btn-hero {
+      background: #104c2f;
+      color: blanchedalmond;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .imagen-hero {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+    .imagen-hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .metodo-revi {
+      background: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+      border-top: 4px solid #2a7c4f;
+      border-bottom: 1px solid #ddd;
+    }
+   
+    .metodo-revi .imagen-metodo {
+      width: 80%;          /* Ocupa el 80% del ancho del contenedor */
+      max-width: 600px;    /* Ancho máximo para no desbordar */
+      height: auto;
+      display: block;      /* Para centrar con margin auto */
+      margin: 0 auto 30px; /* Centrado horizontal y espacio abajo */
+    }
+
+    .metodo-revi h2 {
+      font-size: 2rem;
+      color: #104c2f;
+      margin-bottom: 15px;
+    }
+    .metodo-revi p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    .cta-con-imagen {
+      background: linear-gradient(135deg, #027a63, #00b088);
+      padding: 60px 20px;
+      color: white;
+    }
+    .contenedor-cta {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .texto-cta {
+      flex: 1 1 500px;
+      padding-right: 30px;
+    }
+    .texto-cta h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .texto-cta p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+    .btn-cta {
+      background: #fff;
+      color: #027a63;
+      padding: 12px 24px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .imagen-cta {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+    .imagen-cta img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    } 
+
+    .curso-dia {
+  background: #4a1f14;      /* marrón oscuro */
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.curso-dia .contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.curso-dia h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.curso-dia p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.curso-dia .btn-dia {
+  background: #1f4518;      /* verde oscuro para contraste */
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+} 
+
+.inversionista-pro {
+  background: #f7f1e3;      /* tono beige claro */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.inversionista-pro .contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.inversionista-pro h2 {
+  color: #333;             /* texto oscuro para buen contraste */
+  font-size: 1.8rem;
+  line-height: 1.4;
+} 
+
+/* SECCIÓN TESTIMONIOS AVANZADOS */ 
+
+
+/* Título de la sección de testimonios */
+/* Importar la tipografía Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.testimonios-avanzados .titulo-testimonios {
+  font-family: 'Bebas Neue', cursive;     /* tipografía llamativa */
+  font-size: 3rem;                        /* un poco más grande */
+  letter-spacing: 2px;                    /* espaciado entre letras */
+  background: linear-gradient(90deg, #027a63, #00b088); /* degradado verde */
+  -webkit-background-clip: text;          /* recorta el degradado al texto */
+  -webkit-text-fill-color: transparent;   /* hace transparente el relleno */
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+
+.testimonios-avanzados {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.testimonios-avanzados .contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;            /* Espacio entre tarjetas */
+  justify-content: center;
+}
+
+.card-testimonio {
+  background: #000;      /* Fondo negro */
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;          /* Ancho fijo de cada tarjeta */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform .3s;
+}
+
+.card-testimonio:hover {
+  transform: translateY(-5px); /* Pequeño efecto hover */
+}
+
+.card-testimonio img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card-testimonio h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.stars {
+  color: gold;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.card-testimonio p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card-testimonio span {
+  font-size: 0.85rem;
+  opacity: 0.8;
+} 
+
+/* SECCIÓN ¿Qué vas a lograr? */
+.logros {
+  padding: 60px 20px;
+  background: #4A1F14;
+}
+
+.contenedor-logros {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logros-titulo {
+  text-align: center;     /* antes estaba left */
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+/* Grid de 2 columnas, responsivo */
+.logros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;            /* centra todo el conjunto */
+}
+
+
+/* Cada bloque de logro */
+.logro-item {
+  background: #f5f7fa;
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  /* ícono y texto van a la izquierda */
+  gap: 12px;
+  color: #333;
+  text-align: left;             /* texto alineado a la izquierda */
+} 
+
+/* FOOTER */
+.site-footer {
+  background: beige;       /* verde oscuro */
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-size: 0.9rem;
+}
+
+.footer-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #eaf4ed;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-redes a {
+  margin-left: 10px;
+}
+
+.footer-redes img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: opacity .2s;
+}
+
+.footer-redes img:hover {
+  opacity: 0.7;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0.8;
+} 
+
+/* SECCIÓN Ventajas del curso */
+.ventajas-curso {
+  background: #fff;
+  padding: 80px 20px;
+}
+
+.contenedor-ventajas {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+ /* Lista de ventajas: quita bullets y prepara el espacio para el icono */
+.ventajas-lista ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ventajas-lista ul li {
+  position: relative;
+  padding-left: 36px;      /* espacio para el icono */
+  margin-bottom: 16px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+} 
+
+/* Botón al final de la sección, bajo ambas columnas */
+.ventajas-boton {
+  flex: 1 1 100%;     /* fuerza una nueva fila */
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Estilo del botón */
+.btn-inscribite {
+  display: inline-block;
+  background: #104c2f;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn-inscribite:hover {
+  background: #0e3d1f;
+  transform: translateY(-2px);
+}
+
+
+/* Icono check centrado verticalmente */
+.ventajas-lista ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url('imagenes/check-circle.svg') no-repeat center;
+  background-size: contain;
+}
+
+/* Ajustes para centrar la columna de imágenes */
+.ventajas-imagenes {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;      /* centra cada <img> horizontalmente */
+  justify-content: center;  /* centra verticalmente dentro de su columna */
+  max-width: 400px;         /* limita el ancho total del bloque */
+  margin: 0 auto;           /* centra la columna en el contenedor */
+}
+
+.ventajas-imagenes img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contenedor-ventajas {
+    flex-direction: column;
+  }
+  .ventajas-imagenes {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+} 
+
+/* SECCIÓN Ventajas del curso */
+.ventajas-curso {
+  background: #fff;
+  padding: 80px 20px;
+}
+.contenedor-ventajas {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Lista de ventajas */
+.ventajas-lista {
+  flex: 1 1 500px;
+}
+.ventajas-lista h2 {
+  font-size: 2.2rem;
+  color: #104c2f;
+  margin-bottom: 30px;
+}
+/* Quitamos bullets nativos y preparamos espacio */
+.ventajas-lista ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ventajas-lista ul li {
+  position: relative;
+  padding-left: 48px;    /* espacio para el círculo */
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6; 
+   font-weight: bold;
+}
+
+
+
+.btn-inscribite:hover {
+  background: #0e3d1f;
+  transform: translateY(-2px);
+}
+
+.btn-inscribite:hover {
+  background: #0e3d1f;
+  transform: translateY(-2px);
+}
+
+.btn-inscribite:hover {
+  background: #0e3d1f;
+  transform: translateY(-2px);
+}
+
+
+/* Círculo verde con check blanco delante de cada ítem */
+.ventajas-lista ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #00b088;       /* verde vibrante */
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.1rem;
+}
+
+/* Ajustes para centrar la columna de imágenes */
+.ventajas-imagenes {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;        /* centra cada <img> horizontalmente */
+  justify-content: center;    /* centra verticalmente */
+  max-width: 400px;           /* limita ancho de la columna */
+  margin: 0 auto;             /* centra la columna en el contenedor */
+}
+.ventajas-imagenes img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contenedor-ventajas {
+    flex-direction: column;
+  }
+  .ventajas-imagenes {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+} 
+
+/* SECCIÓN PROGRAMA FINANCIERO ANALYTIQ */
+.programa-analyt {
+  background: #007A5E;
+  padding: 80px 20px;
+}
+
+.contenedor-programa {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-programa {
+  font-style: italic;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.descripcion-programa {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #FFEBCD;
+  margin: 0 auto 40px;
+  max-width: 800px; 
+   font-weight: bold;
+}
+
+.imagen-programa img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .titulo-programa {
+    font-size: 1.8rem;
+  }
+  .descripcion-programa {
+    font-size: 0.95rem;
+  }
+} 
+
+/* Galería de capturas dentro de Programa AnalytIQ */
+.galeria-programa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.galeria-programa img {
+  width: calc(33.333% - 13.33px); /* tres en fila con gap de 20px */
+  max-width: 300px;               /* no crezcan demasiado */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform .3s;
+}
+
+.galeria-programa img:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive: en móvil pasan a 1 o 2 columnas */
+@media (max-width: 768px) {
+  .galeria-programa img {
+    width: calc(50% - 10px);
+  }
+}
+@media (max-width: 480px) {
+  .galeria-programa img {
+    width: 100%;
+  }
+}
+
+/* Footer básico */
+.site-footer {
+  background: #104c2f;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo del footer */
+.footer-logo img {
+  height: 40px;
+}
+
+/* Botón de contacto */
+.footer-links .btn-footer-contacto {
+  display: inline-block;
+  background: #00b088;           /* verde vibrante */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.footer-links .btn-footer-contacto:hover {
+  background: #027a63;
+  transform: translateY(-2px);
+}
+
+/* Redes sociales */
+.footer-redes a {
+  margin-left: 12px;
+}
+
+.footer-redes img {
+  width: 40px;
+  height: 40px;
+  filter: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.footer-redes img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* Pie de copyright */
+.footer-copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+  /* ----------------------------
+   Móvil (max-width: 599px)
+   ---------------------------- */
+@media (max-width: 599px) {
+
+  /* Hero: tipografía más pequeña */
+  .texto-hero h1 {
+    font-size: 1.8rem;
+  }
+  .texto-hero p {
+    font-size: 1rem;
+  }
+
+  /* Botones: ancho completo */
+  .btn-hero,
+  .btn-cta,
+  .btn-inscribite,
+  .btn-dia {
+    width: 100%;
+    padding: 14px 0;
+  }
+
+  /* Secciones a una columna */
+  .contenedor-hero,
+  .contenedor-cta,
+  .contenedor-programa,
+  .contenedor-ventajas,
+  .cards-ventas,
+  .testimonios-avanzados .contenedor {
+    flex-direction: column;
+  }
+
+  /* Galería: 1 imagen por fila */
+  .galeria-programa img {
+    width: 100% !important;
+  }
+
+  /* Ventajas: lista e imagen full width */
+  .ventajas-lista,
+  .ventajas-imagenes {
+    flex: 1 1 100%;
+  }
+
+  /* Cards de ventas: full width */
+  .card-venta {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  /* Testimonios: una tarjeta por fila */
+  .card-testimonio {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  /* Footer: iconos y texto más pequeños */
+  .footer-redes img {
+    width: 32px;
+    height: 32px;
+  }
+  .btn-footer-contacto {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+} 
+
+
+
+/* Mobile (max-width: 599px): ajustes CTA */
+@media (max-width: 599px) {
+  /* Reduce padding general de la sección */
+  .cta-con-imagen {
+    padding: 20px 10px;
+  } 
+
+    /* ——— Testimonios en móvil ——— */
+  .testimonios-avanzados .titulo-testimonios {
+    font-size: 2rem;           /* tamaño más pequeño que 3rem */
+    line-height: 1.2;
+    padding: 0 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .testimonios-avanzados .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .card-testimonio {
+    width: 100% !important;    /* ocupa todo el ancho móvil */
+    max-width: 360px;          /* pero no más de 360px */
+    margin: 0 auto 20px;       /* centrada + espacio inferior */
+  }
+
+  .card-testimonio h3 {
+    font-size: 1.1rem;         /* ligeramente más chico */
+    margin-bottom: 8px;
+  }
+
+  .card-testimonio .stars {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .card-testimonio p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0 0 12px;
+    padding: 0 5px;            /* un poco de padding lateral */
+  }
+
+  .card-testimonio span {
+    font-size: 0.8rem;
+  }
+
+
+  /* Pasa el contenedor a columna y centra */
+  .cta-con-imagen .contenedor-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Texto alineado al centro y sin márgenes extra */
+  .cta-con-imagen .texto-cta {
+    width: 100%;
+    text-align: center;
+  }
+  .cta-con-imagen .texto-cta h2 {
+    font-size: 1.8rem;
+    margin: 0 0 8px;
+  }
+  .cta-con-imagen .texto-cta p {
+    font-size: 1rem;
+    margin: 0 0 12px;
+  }
+
+  /* Botón centrado, siempre por debajo del párrafo */
+  .cta-con-imagen .btn-cta {
+    display: inline-block;
+    margin: 0 0 12px;
+    width: auto;
+  }
+
+  /* Imagen justo debajo del botón, sin margen superior grande */
+  .cta-con-imagen .imagen-cta {
+    width: 100%;
+    margin: 0;
+  }
+  .cta-con-imagen .imagen-cta img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+} 
+
+/* SECCIÓN DE SELLOS GARANTÍA */
+.sellos-garantia {
+  text-align: center;        /* Centra el <h2> y cualquier texto interno */
+  padding: 60px 20px;
+}
+
+.contenedor-sellos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;              /* espacio entre los sellos */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contenedor-sellos img {
+  max-width: 220px;       /* ancho máximo del sello */
+  width: 100%;            /* serán fluidos hasta 160px */
+  height: auto;
+}
+
+/* Responsive: en móvil pasan a fila centrada y un poco más pequeños */
+@media (max-width: 599px) {
+  .contenedor-sellos {
+    gap: 20px;
+  }
+  .contenedor-sellos img {
+    max-width: 120px;
+  }
+}
+/* SECCIÓN CARACTERÍSTICAS */
+.features {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.features-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  border: 2px solid #D32F2F;   /* rojo vivo */
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.feature-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.feature-text h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #D32F2F;
+}
+
+.feature-text p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive – en pantallas muy estrechas */
+@media (max-width: 480px) {
+  .feature-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .feature-item img {
+    margin: 0 0 8px;
+  }
+} 
+
+/* SECCIÓN CERTIFICADO */
+.certificado-section {
+  background: #fafafa;
+  padding: 60px 20px;
+}
+
+.contenedor-certificado {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contenedor-certificado h2 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.certificado-img {
+  display: inline-block;
+  width: 100%;
+  max-width: 800px;
+}
+
+.certificado-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenedor-certificado h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  .certificado-img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .contenedor-certificado h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* SECCIÓN MÓDULOS DEL CURSO */
+.modulos-curso {
+  background: #f7f7f7;
+  padding: 60px 20px;
+}
+
+.contenedor-modulos {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contenedor-modulos h2 {
+  font-size: 2rem;
+  color: #104c2f;
+  margin-bottom: 40px;
+}
+
+/* Grid de módulos */
+/* Grid vertical: un módulo por fila */
+.grid-modulos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;               /* espacio entre módulos */
+  align-items: center;     /* centra cada bloque */
+}
+
+/* Cada módulo */
+/* Cada módulo ocupa ancho completo hasta su max-width */
+.modulo-item {
+  display: block;
+  max-width: 800px;        /* ajusta el tamaño máximo */
+  width: 100%;
+  border: none;            /* si no quieres borde */
+  padding: 0;              /* sin padding extra */
+  text-align: center;      /* centra texto y imagen */
+  transition: none;        /* quita hover si quieres */
+}
+/* Imagen más grande y centrada */
+.modulo-item img {
+  width: 100%;
+  height: auto;
+  max-width: 800px;        /* mismo ancho que el contenedor */
+  margin: 0 auto 20px;
+  border-radius: 8px;
+}
+
+.modulo-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.modulo-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.modulo-item span {
+  display: block;
+  font-weight: bold;
+  color: #104c2f;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenedor-modulos h2 {
+    font-size: 1.8rem;
+  }
+  .grid-modulos {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-modulos h2 {
+    font-size: 1.6rem;
+  }
+  .grid-modulos {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+}
+/* SECCIÓN PROMO CARD */
+.promo-card-section {
+  background: #007A5E;    /* mismo verde que el Hero */
+  padding: 60px 0;        /* cero padding horizontal para full-width */
+}
+
+.promo-card {
+  width: 100%;            /* ocupa todo el ancho */
+  max-width: 1200px;      /* opcional: limita la anchura en desktop */
+  margin: 0 auto;
+  background: transparent;/* quita el verde oscuro interno */
+  box-shadow: none;       /* opcional: sin sombra si prefieres */
+  border-radius: 0;       /* opcional: esquinas cuadradas */
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.promo-info {
+  flex: 1 1 400px;
+  padding: 40px;
+  color: #fff;
+}
+
+.promo-info h2 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.promo-sub {
+  margin: 0 0 20px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.promo-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.promo-benefits li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.promo-benefits li::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #f57c00;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.btn-promo-card {
+  display: inline-block;
+  background: #f57c00;        /* naranja vendedor */
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background .3s, transform .3s;
+}
+
+.btn-promo-card:hover {
+  background: #e65100;
+  transform: translateY(-2px);
+}
+
+.promo-visual {
+  flex: 1 1 300px;
+  background: transparent; /* transparente para que se vea el verde de sección */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-visual img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .promo-card {
+    flex-direction: column;
+  }
+  .promo-visual {
+    order: -1;     /* imagen arriba en móvil */
+    padding: 20px;
+  }
+  .promo-info {
+    padding: 20px;
+  }
+}
+
+/* ——— Promo Card dentro de Ventajas ——— */
+.promo-card-ventajas {
+  margin: 40px 0;
+}
+.promo-card-ventajas .promo-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+.promo-card-ventajas .promo-sub {
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+.promo-card-ventajas .promo-benefits li {
+  margin-bottom: 6px;
+}
+.promo-card-ventajas .btn-promo-card {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+}

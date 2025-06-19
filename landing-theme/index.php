@@ -82,7 +82,9 @@
         <!-- Botón de checkout -->
         <a
           href="https://pay.hotmart.com/I39278939V?ref=W87801197P&bid=1749671326326"
-          class="btn-hero"
+          class="btn-hero" 
+             data-price="75.00"        
+             data-currency="USD"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -111,6 +113,9 @@
       <a 
         href="https://pay.hotmart.com/I39278939V?ref=W87801197P" 
         class="btn-promo-card" 
+
+        data-price="75.00"        
+             data-currency="USD"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -168,7 +173,8 @@
   <div class="contenedor">
     <h2>Curso para quienes quieren dejar de vivir al día</h2>
     <p>Vas a aprender a controlar tu dinero, eliminar deudas y empezar a invertir.</p>
-    <a href="https://pay.hotmart.com/I39278939V?ref=W87801197P" class="btn-promo-card" target="_blank" rel="noopener noreferrer">
+    <a href="https://pay.hotmart.com/I39278939V?ref=W87801197P" class="btn-promo-card" data-price="75.00"        
+             data-currency="USD" target="_blank" rel="noopener noreferrer">
       Inscribite ahora
     </a>
   </div>
@@ -208,7 +214,10 @@
     <!-- Botón abajo de todo -->
     <div class="ventajas-boton">
       <a href="https://pay.hotmart.com/I39278939V?ref=W87801197P&bid=1749671326326"
-         class="btn-inscribite"
+         class="btn-inscribite" 
+
+         data-price="75.00"        
+             data-currency="USD"
          target="_blank"
          rel="noopener noreferrer">
         Inscribite ahora
@@ -395,7 +404,8 @@
     <div class="texto-cta">
       <h2>Tomá el control de tu dinero</h2>
       <p>Curso online práctico con todo lo que no te enseñó la escuela</p>
-      <a href="https://pay.hotmart.com/I39278939V?ref=W87801197P" class="btn-promo-card" target="_blank" rel="noopener">
+      <a href="https://pay.hotmart.com/I39278939V?ref=W87801197P" class="btn-promo-card" data-price="75.00"        
+             data-currency="USD" target="_blank" rel="noopener">
         Inscribite ahora
       </a>
     </div>
@@ -414,7 +424,8 @@
       El curso más completo de educación financiera + acceso exclusivo al software AnalytIQ. <br>
       <strong>Oferta limitada a USD 75</strong> – cupos exclusivos.
     </p>
-    <a href="https://pay.hotmart.com/I39278939V?ref=W87801197P" class="btn-promo-card" target="_blank" rel="noopener">
+    <a href="https://pay.hotmart.com/I39278939V?ref=W87801197P" class="btn-promo-card" data-price="75.00"        
+             data-currency="USD" target="_blank" rel="noopener">
       🔥 Inscribite ahora – Quedan pocos lugares
     </a>
   </div>
@@ -446,34 +457,36 @@
 </footer> 
 
 <script>
-  // 1. Aseguramos que el Pixel base ya cargó
-  if (typeof fbq === 'function') {
-    // 2. Página vista
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof fbq !== 'function') return;
+
+    // Evento PageView (ya lo tienes en head, opcional duplicarlo)
     fbq('track', 'PageView');
 
-    // 3. Opción: contamos un Lead en cada visita
+    // Lead (opcional)
     fbq('track', 'Lead');
 
-    // 4. Inician el checkout al clicar cualquier CTA de compra
+    // Capturar clicks en todos los botones de checkout
     document.querySelectorAll(
       '.btn-hero, .btn-promo-card, .btn-dia, .btn-inscribite, .btn-cta, .btn-final-cta'
     ).forEach(btn => {
       btn.addEventListener('click', () => {
+        // 1) Inicia checkout sin datos de valor
         fbq('track', 'InitiateCheckout');
-      });
-    });
 
-    // 5. Registra la compra cuando hacen click en el BOTÓN FINAL
-    document.querySelectorAll('.btn-final-cta, .btn-promo-card').forEach(btn => {
-      btn.addEventListener('click', () => {
-        fbq('track', 'Purchase', {
-          value: 75.00,    // ajustá al precio real si cambia
-          currency: 'USD'
+        // 2) Dispara Purchase con valor + moneda dinámicos
+        const value    = parseFloat(btn.dataset.price)   || 0;
+        const currency = btn.dataset.currency.toUpperCase() || 'USD';
+
+        fbq('track', 'Purchase', { 
+          value: value, 
+          currency: currency 
         });
       });
     });
-  }
+  });
 </script>
+<?php wp_footer(); ?>
 
 <?php wp_footer(); ?>
 

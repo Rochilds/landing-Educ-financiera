@@ -443,7 +443,37 @@
   <div class="footer-copyright">
     &copy; 2025 — Todos los derechos reservados.
   </div>
-</footer>
+</footer> 
+
+<script>
+  // 1. Aseguramos que el Pixel base ya cargó
+  if (typeof fbq === 'function') {
+    // 2. Página vista
+    fbq('track', 'PageView');
+
+    // 3. Opción: contamos un Lead en cada visita
+    fbq('track', 'Lead');
+
+    // 4. Inician el checkout al clicar cualquier CTA de compra
+    document.querySelectorAll(
+      '.btn-hero, .btn-promo-card, .btn-dia, .btn-inscribite, .btn-cta, .btn-final-cta'
+    ).forEach(btn => {
+      btn.addEventListener('click', () => {
+        fbq('track', 'InitiateCheckout');
+      });
+    });
+
+    // 5. Registra la compra cuando hacen click en el BOTÓN FINAL
+    document.querySelectorAll('.btn-final-cta, .btn-promo-card').forEach(btn => {
+      btn.addEventListener('click', () => {
+        fbq('track', 'Purchase', {
+          value: 75.00,    // ajustá al precio real si cambia
+          currency: 'USD'
+        });
+      });
+    });
+  }
+</script>
 
 <?php wp_footer(); ?>
 

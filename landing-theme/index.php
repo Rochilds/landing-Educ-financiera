@@ -18,7 +18,7 @@
     type="text/css"
   />
 
-  <!-- 4. Meta Pixel Code -->
+  <!-- Meta Pixel Code (head) -->
 <script>
   !function(f,b,e,v,n,t,s){
     if(f.fbq)return;
@@ -36,8 +36,9 @@
 </script>
 <noscript>
   <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1794185348172977&ev=PageView&noscript=1"/>
+       src="https://www.facebook.com/tr?id=1794185348172977&ev=PageView&noscript=1"/>
 </noscript>
+
 
 
   <!-- 5. Título y Meta SEO -->
@@ -482,11 +483,52 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <?php wp_footer(); ?>
+<script>
+  // esperamos a que todo el Pixel esté listo
+  window.addEventListener('load', () => {
+    // comprueba que fbq existe
+    if (typeof fbq !== 'function') {
+      console.warn('fbq no está definido – revisa tu Meta Pixel Code'); 
+      return;
+    }
 
-<?php wp_footer(); ?>
+    // debug: confirmamos que estamos aquí
+    console.log('📦 Pixel listo, adjuntando listener de click…');
 
+    // array de selectores de tus botones de checkout
+    const selectors = [
+      '.btn-hero',
+      '.btn-promo-card',
+      '.btn-dia',
+      '.btn-inscribite',
+      '.btn-cta',
+      '.btn-final-cta'
+    ];
 
+    // buscamos todos los botones
+    const botones = document.querySelectorAll(selectors.join(', '));
+
+    if (!botones.length) {
+      console.warn('⚠️ No encontré botones con esos selectores:', selectors);
+      return;
+    }
+    console.log(`✅ Encontrados ${botones.length} botones de checkout`);
+
+    botones.forEach(btn => {
+      btn.addEventListener('click', () => {
+        console.log('🔔 Click en checkout – disparo InitiateCheckout');
+        fbq('track', 'InitiateCheckout');
+      });
+    });
+  });
+</script>
 </body>
 </html>
+
+
+
+
+
+
 
 

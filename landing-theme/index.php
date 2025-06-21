@@ -19,25 +19,26 @@
   />
 
   <!-- 4. Meta Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s){
-      if(f.fbq)return;
-      n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;
-      n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)
-    }(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1794185348172977');
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1794185348172977&ev=PageView&noscript=1"/>
-  </noscript>
+<script>
+  !function(f,b,e,v,n,t,s){
+    if(f.fbq)return;
+    n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)
+  }(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1794185348172977');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1794185348172977&ev=PageView&noscript=1"/>
+</noscript>
+
 
   <!-- 5. Título y Meta SEO -->
   <title><?php bloginfo('name'); ?> | <?php wp_title(); ?></title>
@@ -457,35 +458,29 @@
 </footer> 
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    if (typeof fbq !== 'function') return;
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof fbq !== 'function') return;
 
-    // Evento PageView (ya lo tienes en head, opcional duplicarlo)
-    fbq('track', 'PageView');
-
-    // Lead (opcional)
-    fbq('track', 'Lead');
-
-    // Capturar clicks en todos los botones de checkout
-    document.querySelectorAll(
-      '.btn-hero, .btn-promo-card, .btn-dia, .btn-inscribite, .btn-cta, .btn-final-cta'
-    ).forEach(btn => {
-      btn.addEventListener('click', () => {
-        // 1) Inicia checkout sin datos de valor
-        fbq('track', 'InitiateCheckout');
-
-        // 2) Dispara Purchase con valor + moneda dinámicos
-        const value    = parseFloat(btn.dataset.price)   || 0;
-        const currency = btn.dataset.currency.toUpperCase() || 'USD';
-
-        fbq('track', 'Purchase', { 
-          value: value, 
-          currency: currency 
-        });
-      });
+  // 1) Trackeamos sólo InitiateCheckout al hacer click en tu CTA de compra
+  document.querySelectorAll(
+    '.btn-hero, .btn-promo-card, .btn-dia, .btn-inscribite, .btn-cta, .btn-final-cta'
+  ).forEach(btn => {
+    btn.addEventListener('click', () => {
+      fbq('track', 'InitiateCheckout');
     });
   });
+
+  // 2) Sólo cuando la URL contenga "/thanks" disparamos el evento Purchase
+  if ( window.location.href.indexOf('/thanks') !== -1 ) {
+    // Las macros {{PROD_PRICE}} y {{PROD_CURRENCY}} Hotmart las sustituye en el thank-you
+    fbq('track', 'Purchase', {
+      value: {{PROD_PRICE}},
+      currency: '{{PROD_CURRENCY}}'
+    });
+  }
+});
 </script>
+
 <?php wp_footer(); ?>
 
 <?php wp_footer(); ?>

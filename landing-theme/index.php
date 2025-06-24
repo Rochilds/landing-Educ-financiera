@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
   <!-- 1. Charset y viewport -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- 2. Tipografías externas -->
   <link
@@ -18,59 +18,59 @@
     type="text/css"
   />
 
-  <!-- Meta Pixel Code (head) -->
-<script>
-  !function(f,b,e,v,n,t,s){
-    if(f.fbq)return;
-    n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)
-  }(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1794185348172977');
-  fbq('track', 'PageView');
-</script>
-<noscript>
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=1794185348172977&ev=PageView&noscript=1"/>
-</noscript>
+  <!-- 4. Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;
+      n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1794185348172977');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1794185348172977&ev=PageView&noscript=1"/>
+  </noscript>
 
-
-
-  <!-- 5. Título y Meta SEO -->
-  <title><?php bloginfo('name'); ?> | <?php wp_title(); ?></title>
+  <!-- 5. Título y meta descripción -->
+  <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
   <meta name="description"
-        content="Aprendé a controlar tu dinero, eliminar deudas e invertir inteligentemente con nuestro curso online práctico. ¡Inscribite hoy y construí tu futuro financiero!">
+        content="<?php echo esc_attr( get_bloginfo('description') ); ?>">
 
-  <link rel="canonical" href="https://educacionfinanciera.digital/">
+  <!-- 6. URL canónica -->
+  <link rel="canonical" href="<?php echo esc_url( home_url() ); ?>">
 
-  <!-- 6. Open Graph -->
-  <meta property="og:title"        content="<?php bloginfo('name'); ?>"/>
-  <meta property="og:description"  content="<?php echo esc_attr( get_bloginfo('description') ); ?>"/>
-  <meta property="og:image"        content="https://educacionfinanciera.digital/imagenes/og-image.jpg"/>
-  <meta property="og:url"          content="<?php echo home_url(); ?>"/>
-  <meta property="og:type"         content="website"/>
-  <meta property="og:site_name"    content="<?php bloginfo('name'); ?>"/>
+  <!-- 7. Open Graph -->
+  <meta property="og:title"        content="<?php bloginfo('name'); ?>" />
+  <meta property="og:description"  content="<?php echo esc_attr( get_bloginfo('description') ); ?>" />
+  <meta property="og:image"        content="<?php echo esc_url( home_url('/imagenes/og-image.jpg') ); ?>" />
+  <meta property="og:url"          content="<?php echo esc_url( home_url() ); ?>" />
+  <meta property="og:type"         content="website" />
+  <meta property="og:site_name"    content="<?php bloginfo('name'); ?>" />
 
-  <!-- 7. Twitter Cards -->
-  <meta name="twitter:card"        content="summary_large_image"/>
-  <meta name="twitter:title"       content="<?php bloginfo('name'); ?>"/>
-  <meta name="twitter:description" content="<?php echo esc_attr( get_bloginfo('description') ); ?>"/>
-  <meta name="twitter:image"       content="https://educacionfinanciera.digital/imagenes/twitter-card.jpg"/>
+  <!-- 8. Twitter Cards -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="<?php bloginfo('name'); ?>" />
+  <meta name="twitter:description" content="<?php echo esc_attr( get_bloginfo('description') ); ?>" />
+  <meta name="twitter:image"       content="<?php echo esc_url( home_url('/imagenes/twitter-card.jpg') ); ?>" />
 
-  <!-- 8. Favicons -->
-  <link rel="icon" href="https://educacionfinanciera.digital/favicon.ico" type="image/x-icon"/>
-  <link rel="apple-touch-icon" href="https://educacionfinanciera.digital/apple-touch-icon.png"/>
+  <!-- 9. Favicons -->
+  <link rel="icon" href="<?php echo esc_url( home_url('/favicon.ico') ); ?>" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="<?php echo esc_url( home_url('/apple-touch-icon.png') ); ?>" />
 
   <?php
-    // Importante: permite inyectar scripts y estilos de plugins y WP en general.
+    // Permite a WP y plugins insertar sus propios scripts/estilos
     wp_head();
   ?>
 </head>
+
 <body <?php body_class(); ?>>
 
  <!-- HERO PERSONALIZADO -->

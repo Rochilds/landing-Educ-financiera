@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+
 <head>
   <!-- 1. Charset y viewport -->
   <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -63,4 +64,3 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>

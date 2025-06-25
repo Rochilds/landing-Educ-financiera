@@ -1,6 +1,9 @@
 
 
-  <?php get_header(); ?>
+ <?php
+/* index.php */
+get_header(); 
+?>
 
 <main>
 

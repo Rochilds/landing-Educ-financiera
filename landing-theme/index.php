@@ -36,7 +36,7 @@
   <!-- 8. Hoja de estilos principal -->
   <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/style.css' ); ?>">
 
-  <!-- 9. Meta Pixel (opcional en HEAD) -->
+  <!-- 9. Meta Pixel (head) -->
   <script>
     !function(f,b,e,v,n,t,s){
       if(f.fbq)return;
@@ -53,61 +53,63 @@
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1794185348172977&ev=PageView&noscript=1"/>
+         src="https://www.facebook.com/tr?id=1794185348172977&ev=PageView&noscript=1"/>
   </noscript>
 
   <?php
-    // Esto deja pasar a WordPress y plugins a inyectar sus scripts/estilos.
+    // Permite a WP y plugins inyectar sus propios scripts/estilos.
     wp_head();
   ?>
 </head>
 
+<body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
 
-  get_header();        // Esto incluirá todo el <head> + apertura <body> + wp_body_open()?>
+  <?php get_header(); ?>
 
+  
 
+ <main>
 
- <!-- HERO PERSONALIZADO --> 
+  <!-- HERO PERSONALIZADO -->
+  <section class="hero-moderno">
+    <div class="hero-inner">
+      <!-- Titular y subtítulo -->
+      <h1 class="hero-title">Tomá el control total de tu dinero hoy</h1>
+      <p class="hero-subtitle">
+        Aprende a eliminar deudas, organizar tu presupuesto e invertir desde cero.  
+        Incluye software exclusivo, garantía de 7 días y certificación.
+      </p>
 
-<section class="hero-moderno">
-  <div class="hero-inner">
-    <!-- Titular y subtítulo -->
-    <h1 class="hero-title">Tomá el control total de tu dinero hoy</h1>
-    <p class="hero-subtitle">
-      Aprende a eliminar deudas, organizar tu presupuesto e invertir desde cero.  
-      Incluye software exclusivo, garantía de 7 días y certificación.
-    </p>
+      <!-- Imagen en el medio -->
+      <div class="hero-visual">
+        <img
+          src="<?php echo get_template_directory_uri(); ?>/img/img-2.png"
+          alt="Laptop + App móvil"
+        />
+      </div>
 
-    <!-- Imagen en el medio -->
-    <div class="hero-visual">
-      <img
-        src="<?php echo get_template_directory_uri(); ?>/img/img-2.png"
-        alt="Laptop + App móvil"
-      />
+      <!-- Call to action -->
+      <a
+        href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
+        class="hero-cta"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ¡Accedé ahora por USD 75!<br>
+        <small>Últimos días con precio promocional</small>
+      </a>
+
+      <!-- Rating -->
+      <div class="hero-rating">
+        <span class="stars">★★★★★</span>
+        <span class="rating-text">+1.200 alumnos ya transformaron su economía</span>
+      </div>
     </div>
-
-    <!-- Call to action -->
-    <a
-      href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
-      class="hero-cta"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      ¡Accedé ahora por USD 75!<br>
-      <small>Últimos días con precio promocional</small>
-    </a>
-
-    <!-- Rating -->
-    <div class="hero-rating">
-      <span class="stars">★★★★★</span>
-      <span class="rating-text">+1.200 alumnos ya transformaron su economía</span>
-    </div>
-  </div>
-</section>
+  </section>
 
 
-    
-</section>
+
 <!-- SECCIÓN “El Método RE-VI” MODERNA -->
 <section class="metodo-revi-moderno">
   <div class="container">

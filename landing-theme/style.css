@@ -14,45 +14,50 @@ Version:      1.0
 
 
 
-/* = Hero moderno */
+/* = Hero Moderno = */
 .hero-moderno {
   background-color: #0D1F2D;
   color: #FFF;
-  text-align: center;
   padding: 80px 20px;
 }
+
 .hero-moderno .hero-inner {
   max-width: 900px;
   margin: 0 auto;
-  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
+  justify-content: center !important;
   align-items: center;
+  text-align: center;
   gap: 30px;
 }
-.hero-logo img {
+
+.hero-moderno .hero-logo img {
   height: 60px;
-  width: auto;
 }
-.hero-title {
+
+.hero-moderno .hero-title {
   font-size: 2.5rem;
-  font-weight: 700;
   margin: 0;
   line-height: 1.2;
 }
-.hero-subtitle {
+
+.hero-moderno .hero-subtitle {
   font-size: 1.125rem;
-  line-height: 1.5;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0;
+  line-height: 1.5;
+  opacity: 0.9;
 }
-.hero-visual img {
+
+.hero-moderno .hero-visual img {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }
-.hero-cta {
+
+.hero-moderno .hero-cta {
   display: inline-block;
   background: #F5A623;
   color: #0D1F2D;
@@ -64,38 +69,45 @@ Version:      1.0
   transition: background .3s, transform .3s;
   line-height: 1.2;
 }
-.hero-cta small {
+
+.hero-moderno .hero-cta small {
   display: block;
   font-size: 0.75rem;
   font-weight: 400;
   margin-top: 4px;
   color: rgba(13,31,45, .8);
 }
-.hero-cta:hover {
+
+.hero-moderno .hero-cta:hover {
   background: #ffaa37;
   transform: translateY(-2px);
 }
-.hero-rating {
+
+.hero-moderno .hero-rating {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 12px;
-  font-size: 1rem;
+  gap: 0.25rem;
 }
-.hero-rating .stars {
+
+.hero-moderno .hero-rating .stars {
   color: #FFD700;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 1;
 }
-.hero-rating .rating-text {
-  opacity: .85;
+
+.hero-moderno .hero-rating .rating-text {
+  font-size: 0.9rem;
+  opacity: 0.85;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-title { font-size: 2rem; }
-  .hero-subtitle { font-size: 1rem; }
-  .hero-cta { width: 100%; max-width: 300px; padding: 14px 0; }
+  .hero-moderno .hero-title    { font-size: 2rem; }
+  .hero-moderno .hero-subtitle { font-size: 1rem; }
+  .hero-moderno .hero-cta      { width: 100%; max-width: 300px; padding: 14px 0; }
 }
+
 
 
 

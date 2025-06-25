@@ -13,7 +13,8 @@ Version:      1.0
  }
 
 
-/* ========== Hero Moderno ========== */
+
+/* = Hero moderno */
 /* = Hero moderno */
 .hero-moderno {
   background-color: #0D1F2D;
@@ -96,6 +97,7 @@ Version:      1.0
   .hero-subtitle { font-size: 1rem; }
   .hero-cta { width: 100%; max-width: 300px; padding: 14px 0; }
 }
+
 
 /* — SECCIÓN “El Método RE-VI” — */
 .metodo-revi-moderno {

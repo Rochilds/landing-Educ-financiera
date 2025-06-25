@@ -84,7 +84,16 @@
       <p class="hero-subtitle">
         Aprende a eliminar deudas, organizar tu presupuesto e invertir desde cero.  
         Incluye software exclusivo, garantía de 7 días y certificación.
-      </p>
+      </p> 
+
+      <!-- Imagen principal -->
+    <div class="hero-visual">
+      <img
+        src="<?php echo get_template_directory_uri(); ?>/img/img-2.png"
+        alt="Laptop + App móvil"
+      />
+    </div>
+  
 
       <!-- Call to action -->
       <a
@@ -106,14 +115,7 @@
       </div>
     </div>
 
-    <!-- Imagen principal -->
-    <div class="hero-visual">
-      <img
-        src="<?php echo get_template_directory_uri(); ?>/img/img-2.png"
-        alt="Laptop + App móvil"
-      />
-    </div>
-  </div>
+    
 </section>
 <!-- SECCIÓN “El Método RE-VI” MODERNA -->
 <section class="metodo-revi-moderno">

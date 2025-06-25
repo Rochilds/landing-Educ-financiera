@@ -13,89 +13,103 @@ Version:      1.0
  }
 
 
-
-/* = Hero moderno */
+/* ========== Hero Moderno ========== */
 .hero-moderno {
-  background-color: #0D1F2D;
-  color: #FFF;
-  text-align: center;
+  background: linear-gradient(135deg, #007a5e 0%, #00b088 100%);
+  color: #fff;
   padding: 80px 20px;
 }
 .hero-moderno .hero-inner {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
 }
-.hero-logo img {
-  height: 60px;
-  width: auto;
+
+/* Columna de texto */
+.hero-moderno .hero-copy {
+  flex: 1 1 400px;
 }
-.hero-title {
+.hero-moderno .hero-title {
   font-size: 2.5rem;
-  font-weight: 700;
-  margin: 0;
+  margin: 0 0 16px;
   line-height: 1.2;
 }
-.hero-subtitle {
-  font-size: 1.125rem;
-  line-height: 1.5;
-  max-width: 700px;
-  margin: 0 auto;
+.hero-moderno .hero-subtitle {
+  font-size: 1.1rem;
+  margin: 0 0 24px;
+  max-width: 500px;
+  opacity: 0.9;
 }
-.hero-visual img {
+
+/* Botón CTA */
+.hero-moderno .hero-cta {
+  display: inline-block;
+  background: #f7b600;
+  color: #104c2f;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.3s;
+}
+.hero-moderno .hero-cta:hover {
+  background: #e0a800;
+  transform: translateY(-2px);
+}
+
+/* Rating debajo del CTA */
+.hero-moderno .hero-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+.hero-moderno .hero-rating .stars {
+  color: gold;
+  font-size: 1.2rem;
+}
+.hero-moderno .hero-rating .rating-text {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Imagen */
+.hero-moderno .hero-visual {
+  flex: 1 1 400px;
+  text-align: center;
+}
+.hero-moderno .hero-visual img {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-}
-.hero-cta {
-  display: inline-block;
-  background: #F5A623;
-  color: #0D1F2D;
-  padding: 16px 32px;
-  font-size: 1.125rem;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 40px;
-  transition: background .3s, transform .3s;
-  line-height: 1.2;
-}
-.hero-cta small {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 400;
-  margin-top: 4px;
-  color: rgba(13,31,45, .8);
-}
-.hero-cta:hover {
-  background: #ffaa37;
-  transform: translateY(-2px);
-}
-.hero-rating {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 1rem;
-}
-.hero-rating .stars {
-  color: #FFD700;
-  font-size: 1.25rem;
-  line-height: 1;
-}
-.hero-rating .rating-text {
-  opacity: .85;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-title { font-size: 2rem; }
-  .hero-subtitle { font-size: 1rem; }
-  .hero-cta { width: 100%; max-width: 300px; padding: 14px 0; }
+  .hero-moderno .hero-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-moderno .hero-copy {
+    margin-top: 40px;
+  }
+  .hero-moderno .hero-title {
+    font-size: 2rem;
+  }
+  .hero-moderno .hero-subtitle {
+    font-size: 1rem;
+  }
+  .hero-moderno .hero-visual {
+    margin-bottom: 20px;
+  }
 }
+
 
 /* — SECCIÓN “El Método RE-VI” — */
 .metodo-revi-moderno {

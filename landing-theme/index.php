@@ -543,8 +543,9 @@
   </div>
 </section> 
 
-<?php
-get_footer();  // Esto inyecta wp_footer() + cierra </body></html>
+</main>
+
+<?php get_footer(); ?>  <!-- aquí abres PHP para llamar al footer y luego cierra -->
 
 <footer class="contacto-footer">
   <div class="container contacto-inner">

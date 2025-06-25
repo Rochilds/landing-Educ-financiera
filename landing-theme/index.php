@@ -71,49 +71,48 @@
   ?>
 </head>
 
-<body <?php body_class(); ?>>
+  <body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
 
- <!-- HERO PERSONALIZADO -->
+
+ <!-- HERO PERSONALIZADO --> 
+
 <section class="hero-moderno">
   <div class="hero-inner">
-    <!-- Titular y texto -->
-    <div class="hero-copy">
-      <h1 class="hero-title">
-        Tomá el control total de tu dinero hoy
-      </h1>
-      <p class="hero-subtitle">
-        Aprende a eliminar deudas, organizar tu presupuesto e invertir desde cero.  
-        Incluye software exclusivo, garantía de 7 días y certificación.
-      </p> 
+    <!-- Titular y subtítulo -->
+    <h1 class="hero-title">Tomá el control total de tu dinero hoy</h1>
+    <p class="hero-subtitle">
+      Aprende a eliminar deudas, organizar tu presupuesto e invertir desde cero.  
+      Incluye software exclusivo, garantía de 7 días y certificación.
+    </p>
 
-      <!-- Imagen principal -->
+    <!-- Imagen en el medio -->
     <div class="hero-visual">
       <img
         src="<?php echo get_template_directory_uri(); ?>/img/img-2.png"
         alt="Laptop + App móvil"
       />
     </div>
-  
 
-      <!-- Call to action -->
-      <a
-        href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hero-cta"
-      >
-        ¡Accedé ahora por USD 75!<br>
-        <small>Últimos días con precio promocional</small>
-      </a>
+    <!-- Call to action -->
+    <a
+      href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
+      class="hero-cta"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ¡Accedé ahora por USD 75!<br>
+      <small>Últimos días con precio promocional</small>
+    </a>
 
-      <!-- Rating -->
-      <div class="hero-rating">
-        <span class="stars">★★★★★</span>
-        <span class="rating-text">
-          +1.200 alumnos ya transformaron su economía
-        </span>
-      </div>
+    <!-- Rating -->
+    <div class="hero-rating">
+      <span class="stars">★★★★★</span>
+      <span class="rating-text">+1.200 alumnos ya transformaron su economía</span>
     </div>
+  </div>
+</section>
+
 
     
 </section>

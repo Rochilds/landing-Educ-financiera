@@ -63,7 +63,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <?php wp_body_open(); ?>
+<?php wp_body_open(); ?>
 
   <?php get_header(); ?>
 
@@ -85,8 +85,7 @@
       <div class="hero-visual">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/img-2.png"
-          alt="Laptop + App móvil"
-        />
+          alt="Laptop + App móvil">
       </div>
 
       <!-- Call to action -->
@@ -94,8 +93,7 @@
         href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
         class="hero-cta"
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         ¡Accedé ahora por USD 75!<br>
         <small>Últimos días con precio promocional</small>
       </a>
@@ -142,8 +140,7 @@
       <div class="step-item">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/img-4.png"
-          alt="Paso 2: Evaluación Personal"
-        />
+          alt="Paso 2: Evaluación Personal">
         <h3>Paso 2</h3>
         <h4>Evaluación Personal</h4>
         <p>Diagnostica tu situación actual: ingresos, deudas y gastos.</p>
@@ -305,7 +302,7 @@
   class="llevar-icon"
   src="img/img-14.png"
   alt="Acceso inmediato al curso y software exclusivo">
-        />
+        
         <p class="llevar-text">
           Acceso inmediato al curso completo y al software exclusivo
         </p>
@@ -316,7 +313,7 @@
   class="llevar-icon"
   src="img/img-15.png"
   alt="Método paso a paso">
-        />
+        
         <p class="llevar-text">
           Método paso a paso probado y fácil de aplicar
         </p>
@@ -327,7 +324,7 @@
   class="llevar-icon"
   src="img/img-16.png"
   alt="Resultados desde el primer mes">
-        />
+        
         <p class="llevar-text">
           Resultados desde el primer mes con compromiso
         </p>
@@ -371,8 +368,7 @@
       href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
       class="btn-llevar"
       target="_blank"
-      rel="noopener noreferrer"
-    >
+      rel="noopener noreferrer">
       ¡Quiero acceder a todos los beneficios ahora!
     </a>
   </div>
@@ -438,8 +434,7 @@
         href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
         class="btn-confianza"
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         Accedé ahora al curso
       </a>
     </div>

@@ -552,25 +552,24 @@
     <a 
       href="https://wa.me/5493518185769?text=¡Hola!%20Quiero%20más%20info"
       class="btn-whatsapp"
-      target="_blank" rel="noopener"
-    >
+      target="_blank" rel="noopener">
       <img 
         src="img/img-whatsapp.png" 
         alt="WhatsApp" 
         class="whatsapp-icon">
       
       Contactar por WhatsApp
-    </a>
+    <a>
 
     <div class="footer-redes">
   <a href="https://facebook.com/tu-perfil" target="_blank" rel="noopener">
     <img src="img/img-fb.png"
          alt="Facebook" width="32" height="32">
-  </a>
+  <a>
   <a href="https://instagram.com/tu-perfil" target="_blank" rel="noopener">
     <img src="img/img-ig.png"
          alt="Instagram" width="32" height="32">
-  </a>
+  <a>
 </div>
 
     <p class="footer-follow">
@@ -582,6 +581,7 @@
     </p>
   </div>
 </footer>
+<?php wp_footer(); ?>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {

@@ -71,8 +71,8 @@
   ?>
 </head>
 
-  <body <?php body_class(); ?>>
-  <?php wp_body_open(); ?>
+  get_header();        // Esto incluirá todo el <head> + apertura <body> + wp_body_open()?>
+
 
 
  <!-- HERO PERSONALIZADO --> 
@@ -549,6 +549,9 @@
   </div>
 </section> 
 
+<?php
+get_footer();  // Esto inyecta wp_footer() + cierra </body></html>
+
 <footer class="contacto-footer">
   <div class="container contacto-inner">
     <h2 class="contacto-title">
@@ -654,6 +657,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 </script>
+
 </body>
 </html>
 

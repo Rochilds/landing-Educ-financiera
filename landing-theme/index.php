@@ -107,23 +107,36 @@
 <section class="metodo-revi-moderno">
   <div class="container">
     <!-- Título principal -->
-    <h2 class="metodo-title">El Método <span>RE-VI</span></h2>
-    <p class="metodo-subtitle">(Reeducación Financiera + <strong>Visión de Riqueza</strong>)</p>
+    <h2 class="metodo-title">
+      El Método <span>RE-VI</span>
+    </h2>
+    <p class="metodo-subtitle">
+      (Reeducación Financiera + <strong>Visión de Riqueza</strong>)
+    </p>
 
     <!-- Pasos -->
     <div class="metodo-steps">
       <!-- Paso 1 -->
       <div class="step-item">
-        <img src="img/img-3.png" alt="Paso 1: Reeducación Financiera">
+        <img
+          src="<?php echo get_template_directory_uri(); ?>/img/img-3.png"
+          alt="Paso 1: Reeducación Financiera"
+        />
         <h3>Paso 1</h3>
         <h4>Reeducación Financiera</h4>
-        <p>Entendé por qué el sistema no te enseñó a manejar el dinero. Acá comenzás a reprogramar tu mentalidad.</p>
+        <p>
+          Entendé por qué el sistema no te enseñó a manejar el dinero. Acá
+          comenzás a reprogramar tu mentalidad.
+        </p>
       </div>
       <div class="step-arrow">→</div>
 
       <!-- Paso 2 -->
       <div class="step-item">
-        <img src="img/img-4.png" alt="Paso 2: Evaluación Personal">
+        <img
+          src="<?php echo get_template_directory_uri(); ?>/img/img-4.png"
+          alt="Paso 2: Evaluación Personal"
+        />
         <h3>Paso 2</h3>
         <h4>Evaluación Personal</h4>
         <p>Diagnostica tu situación actual: ingresos, deudas y gastos.</p>
@@ -132,7 +145,10 @@
 
       <!-- Paso 3 -->
       <div class="step-item">
-        <img src="img/img-5.png" alt="Paso 3: Construcción de Riqueza">
+        <img
+          src="<?php echo get_template_directory_uri(); ?>/img/img-5.png"
+          alt="Paso 3: Construcción de Riqueza"
+        />
         <h3>Paso 3</h3>
         <h4>Sistema de Construcción de Riqueza</h4>
         <p>Aplicás nuestro sistema validado: presupuesto, inversión y escalamiento.</p>
@@ -141,43 +157,20 @@
 
       <!-- Paso 4 -->
       <div class="step-item">
-        <img src="img/img-6.png" alt="Paso 4: Visión de Largo Plazo">
+        <img
+          src="<?php echo get_template_directory_uri(); ?>/img/img-6.png"
+          alt="Paso 4: Visión de Largo Plazo"
+        />
         <h3>Paso 4</h3>
         <h4>Visión de Largo Plazo</h4>
-        <p>Creás un plan realista para multiplicar tu patrimonio y salir del ciclo de escasez.</p>
-      </div>
-    </div>
-  </div>
-</section> 
-
-<!-- SECCIÓN “¿Qué lograste en los últimos 10 años…” -->
-<section class="section-intro">
-  <div class="container">
-    <div class="intro-content">
-      <!-- Texto principal -->
-      <div class="intro-text">
-        <h2 class="intro-title">¿Qué lograste en los últimos <span>10 años</span> con tu dinero?</h2>
-        <p class="intro-subtitle">
-          ¿Sentís que trabajás cada vez más, pero no ves progreso financiero?
-          Es momento de dejar de improvisar y tomar el control.
+        <p>
+          Creás un plan realista para multiplicar tu patrimonio y salir del ciclo
+          de escasez.
         </p>
-        <ul class="intro-list">
-          <li>✔ Seguiste los consejos tradicionales… y no funcionaron</li>
-          <li>✔ Aumentaste tus ingresos, pero también tus deudas</li>
-          <li>✔ Te esforzaste, pero el dinero nunca alcanza</li>
-          <li>✔ ¿Y si el problema no sos vos, sino el sistema?</li>
-        </ul>
-        <p class="intro-cta"><strong>No te faltó esfuerzo. Te faltó educación financiera.</strong></p>
-      </div>
-
-      <!-- Imagen ilustrativa -->
-      <div class="intro-image">
-        <img src="img/img-7.png"
-             alt="Persona pensando en finanzas">
       </div>
     </div>
   </div>
-</section> 
+</section>
 
 <!-- SECCIÓN “Más de 600 personas…” -->
 <section class="testimonios-alt">

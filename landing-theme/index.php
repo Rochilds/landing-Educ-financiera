@@ -67,38 +67,32 @@
 
   <?php get_header(); ?>
 
-  
-
- <main>
+<main>
 
   <!-- HERO PERSONALIZADO -->
   <section class="hero-moderno">
     <div class="hero-inner">
-      <!-- Titular y subtítulo -->
       <h1 class="hero-title">Tomá el control total de tu dinero hoy</h1>
       <p class="hero-subtitle">
-        Aprende a eliminar deudas, organizar tu presupuesto e invertir desde cero.  
+        Aprende a eliminar deudas, organizar tu presupuesto e invertir desde cero.
         Incluye software exclusivo, garantía de 7 días y certificación.
       </p>
-
-      <!-- Imagen en el medio -->
       <div class="hero-visual">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/img-2.png"
-          alt="Laptop + App móvil">
+          alt="Laptop + App móvil"
+          loading="lazy"
+        >
       </div>
-
-      <!-- Call to action -->
       <a
         href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
         class="hero-cta"
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+      >
         ¡Accedé ahora por USD 75!<br>
         <small>Últimos días con precio promocional</small>
       </a>
-
-      <!-- Rating -->
       <div class="hero-rating">
         <span class="stars">★★★★★</span>
         <span class="rating-text">+1.200 alumnos ya transformaron su economía</span>
@@ -107,481 +101,285 @@
   </section>
 
 
-
-<!-- SECCIÓN “El Método RE-VI” MODERNA -->
-<section class="metodo-revi-moderno">
-  <div class="container">
-    <!-- Título principal -->
-    <h2 class="metodo-title">
-      El Método <span>RE-VI</span>
-    </h2>
-    <p class="metodo-subtitle">
-      (Reeducación Financiera + <strong>Visión de Riqueza</strong>)
-    </p>
-
-    <!-- Pasos -->
-    <div class="metodo-steps">
-      <!-- Paso 1 -->
-      <div class="step-item">
-        <img
-          src="<?php echo get_template_directory_uri(); ?>/img/img-3.png"
-          alt="Paso 1: Reeducación Financiera"
-        />
-        <h3>Paso 1</h3>
-        <h4>Reeducación Financiera</h4>
-        <p>
-          Entendé por qué el sistema no te enseñó a manejar el dinero. Acá
-          comenzás a reprogramar tu mentalidad.
-        </p>
-      </div>
-      <div class="step-arrow">→</div>
-
-      <!-- Paso 2 -->
-      <div class="step-item">
-        <img
-          src="<?php echo get_template_directory_uri(); ?>/img/img-4.png"
-          alt="Paso 2: Evaluación Personal">
-        <h3>Paso 2</h3>
-        <h4>Evaluación Personal</h4>
-        <p>Diagnostica tu situación actual: ingresos, deudas y gastos.</p>
-      </div>
-      <div class="step-arrow">→</div>
-
-      <!-- Paso 3 -->
-      <div class="step-item">
-        <img
-          src="<?php echo get_template_directory_uri(); ?>/img/img-5.png"
-          alt="Paso 3: Construcción de Riqueza"
-        />
-        <h3>Paso 3</h3>
-        <h4>Sistema de Construcción de Riqueza</h4>
-        <p>Aplicás nuestro sistema validado: presupuesto, inversión y escalamiento.</p>
-      </div>
-      <div class="step-arrow">→</div>
-
-      <!-- Paso 4 -->
-      <div class="step-item">
-        <img
-          src="<?php echo get_template_directory_uri(); ?>/img/img-6.png"
-          alt="Paso 4: Visión de Largo Plazo"
-        />
-        <h3>Paso 4</h3>
-        <h4>Visión de Largo Plazo</h4>
-        <p>
-          Creás un plan realista para multiplicar tu patrimonio y salir del ciclo
-          de escasez.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECCIÓN “Más de 600 personas…” -->
-<section class="testimonios-alt">
-  <div class="container">
-    <!-- Título + subtítulo -->
-    <header class="testimonios-alt__header">
-      <h2>Más de 600 personas ya comenzaron su camino hacia la libertad financiera</h2>
-      <p>Ellos también empezaron sin saber nada de finanzas… y hoy están organizando sus números, eliminando deudas y aprendiendo a invertir.</p>
-    </header>
-
-    <!-- Lista de cards -->
-    <div class="testimonios-alt__grid">
-      <!-- Card 1: imagen izquierda -->
-      <div class="ta-card">
-        <div class="ta-card__img">
-          <img src="img/img-test2.jpeg" alt="Lucía G.">
+  <!-- MÉTODO RE-VI MODERNO -->
+  <section class="metodo-revi-moderno">
+    <div class="container">
+      <h2 class="metodo-title">El Método <span>RE-VI</span></h2>
+      <p class="metodo-subtitle">(Reeducación Financiera + <strong>Visión de Riqueza</strong>)</p>
+      <div class="metodo-steps">
+        <div class="step-item">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/img/img-3.png"
+            alt="Paso 1: Reeducación Financiera"
+            loading="lazy"
+          >
+          <h3>Paso 1</h3>
+          <h4>Reeducación Financiera</h4>
+          <p>Entendé por qué el sistema no te enseñó a manejar el dinero. Acá comenzás a reprogramar tu mentalidad.</p>
         </div>
-        <div class="ta-card__body">
-          <p class="ta-card__text">
-            Con este curso entendí por primera vez cómo manejar mi plata. Ya terminé el Excel y pude recortar gastos que no veía.
-          </p>
-          <p class="ta-card__author">Lucía G., emprendedora – Argentina</p>
+        <div class="step-arrow">→</div>
+        <div class="step-item">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/img/img-4.png"
+            alt="Paso 2: Evaluación Personal"
+            loading="lazy"
+          >
+          <h3>Paso 2</h3>
+          <h4>Evaluación Personal</h4>
+          <p>Diagnostica tu situación actual: ingresos, deudas y gastos.</p>
         </div>
-      </div>
-
-      <!-- Card 2: imagen derecha -->
-      <div class="ta-card">
-        <div class="ta-card__img">
-          <img src="img/img-test-1.jpeg" alt="Carlos R.">
+        <div class="step-arrow">→</div>
+        <div class="step-item">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/img/img-5.png"
+            alt="Paso 3: Construcción de Riqueza"
+            loading="lazy"
+          >
+          <h3>Paso 3</h3>
+          <h4>Sistema de Construcción de Riqueza</h4>
+          <p>Aplicás nuestro sistema validado: presupuesto, inversión y escalamiento.</p>
         </div>
-        <div class="ta-card__body">
-          <p class="ta-card__text">
-            Me ayudó a ordenar mis ingresos, pagar deudas y hasta empecé a ahorrar e invertir. Súper claro y práctico.
-          </p>
-          <p class="ta-card__author">Carlos R., diseñador freelance – México</p>
-        </div>
-      </div>
-
-      <!-- Card 3: imagen izquierda -->
-      <div class="ta-card">
-        <div class="ta-card__img">
-          <img src="img/img-test-3.jpeg" alt=" Carlos V.">
-        </div>
-        <div class="ta-card__body">
-          <p class="ta-card__text">
-            No soy bueno con los números, pero el paso a paso del curso me hizo sentir seguro. Lo recomiendo totalmente.
-          </p>
-          <p class="ta-card__author"> Walter., Gerente de planta – Colombia</p>
+        <div class="step-arrow">→</div>
+        <div class="step-item">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/img/img-6.png"
+            alt="Paso 4: Visión de Largo Plazo"
+            loading="lazy"
+          >
+          <h3>Paso 4</h3>
+          <h4>Visión de Largo Plazo</h4>
+          <p>Creás un plan realista para multiplicar tu patrimonio y salir del ciclo de escasez.</p>
         </div>
       </div>
     </div>
-  </div>
-</section> 
+  </section>
 
 
-
-    <!-- SECCIÓN BENEFICIOS -->
-<section class="beneficios">
-  <div class="beneficios__inner container">
-    <!-- Título y subtítulo -->
-    <header class="beneficios__header">
-      <h2 class="beneficios__titulo">
-        Tomá el control total de tu dinero y construí tu libertad financiera
-      </h2>
-      <p class="beneficios__subtitulo">
-        Aprendé a salir de deudas, organizar tu presupuesto, ahorrar, invertir desde cero y usar herramientas que trabajan por vos.
-      </p>
-    </header>
-
-    <!-- Grid de iconos + texto -->
-    <ul class="beneficios__grid">
-      <li class="beneficio-item">
-        <img class="beneficio-item__icon" src="img/img-8.png" alt="Eliminar deudas">
-        <p class="beneficio-item__texto">Eliminar tus deudas sin estrés</p>
-      </li>
-      <li class="beneficio-item">
-        <img class="beneficio-item__icon" src="img/img-9.png" alt="Ahorrar con objetivos">
-        <p class="beneficio-item__texto">Ahorrar con objetivos claros</p>
-      </li>
-      <li class="beneficio-item">
-        <img class="beneficio-item__icon" src="img/img-10.png" alt="Mentalidad financiera">
-        <p class="beneficio-item__texto">Mentalidad financiera para toda la vida</p>
-      </li>
-      <li class="beneficio-item">
-        <img class="beneficio-item__icon" src="img/img-11.png" alt="Organizar finanzas">
-        <p class="beneficio-item__texto">Organizar tus finanzas en un solo lugar</p>
-      </li>
-      <li class="beneficio-item">
-        <img class="beneficio-item__icon" src="img/img-12.png" alt="Invertir desde cero">
-        <p class="beneficio-item__texto">Invertir desde cero con estrategias seguras</p>
-      </li>
-      <li class="beneficio-item">
-  <img
-    class="beneficio-item__icon"
-    src="img/img-13.png"
-    alt="Software exclusivo">
-  <p class="beneficio-item__texto">
-    Acceso a software exclusivo para automatizar todo
-  </p>
-</li>
-    </ul>
-
-    <!-- CTA -->
-    <div class="beneficios__cta">
-      <a href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="btn-beneficios">
-      
-        Quiero cambiar mi realidad financiera
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="llevar-section">
-  <div class="container">
-    <h2 class="llevar-title">
-      Esto es lo que te llevás al inscribirte hoy:
-    </h2>
-
-    <ul class="llevar-list">
-      <li class="llevar-item">
-        <img
-  class="llevar-icon"
-  src="img/img-14.png"
-  alt="Acceso inmediato al curso y software exclusivo">
-        
-        <p class="llevar-text">
-          Acceso inmediato al curso completo y al software exclusivo
-        </p>
-      </li>
-
-      <li class="llevar-item">
-        <img
-  class="llevar-icon"
-  src="img/img-15.png"
-  alt="Método paso a paso">
-        
-        <p class="llevar-text">
-          Método paso a paso probado y fácil de aplicar
-        </p>
-      </li>
-
-      <li class="llevar-item">
-        <img
-  class="llevar-icon"
-  src="img/img-16.png"
-  alt="Resultados desde el primer mes">
-        
-        <p class="llevar-text">
-          Resultados desde el primer mes con compromiso
-        </p>
-      </li>
-
-      <li class="llevar-item">
-        <img
-          class="llevar-icon"
-          src="img/img-17.png"
-          alt="Certificación digital">
-        
-        <p class="llevar-text">
-          Certificación digital al finalizar
-        </p>
-      </li>
-
-      <li class="llevar-item">
-        <img
-          class="llevar-icon"
-          src="img/img-18.png"
-          alt="Garantía de 7 días">
-        
-        <p class="llevar-text">
-          Garantía de satisfacción de 7 días
-        </p>
-      </li>
-
-      <li class="llevar-item">
-        <img
-          class="llevar-icon"
-          src="img/img-19.png"
-          alt="Ideal para principiantes">
-        
-        <p class="llevar-text">
-          Ideal para personas sin conocimientos
-        </p>
-      </li>
-    </ul>
-
-    <a
-      href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
-      class="btn-llevar"
-      target="_blank"
-      rel="noopener noreferrer">
-      ¡Quiero acceder a todos los beneficios ahora!
-    </a>
-  </div>
-</section> 
-
-<!-- Sección “Inscribite con total confianza”  -->
-
-<section class="confianza-section">
-  <div class="confianza-container">
-
-    <h2 class="confianza-title">Inscribite con total confianza!</h2>
-
-    <div class="confianza-grid">
-      <div class="confianza-item">
-        <img
-          src="img/img-20.png"
-          alt="Garantía 100% segura"
-          class="confianza-icon">
-        
-        <h3 class="confianza-item__title">Garantía 100% segura</h3>
-        <p class="confianza-item__text">
-          Tu inversión está protegida con una garantía de 7 días.
-        </p>
-      </div>
-      <div class="confianza-item">
-        <img
-          src="img/img-21.png"
-          alt="Privacidad protegida"
-          class="confianza-icon">
-        
-        <h3 class="confianza-item__title">Privacidad protegida</h3>
-        <p class="confianza-item__text">
-          Tu información personal y de pago está cifrada.
-        </p>
-      </div>
-      <div class="confianza-item">
-        <img
-          src="img/img-22.png"
-          alt="Entrega inmediata"
-          class="confianza-icon">
-        
-        <h3 class="confianza-item__title">Entrega inmediata</h3>
-        <p class="confianza-item__text">
-          Accedé al curso + software apenas te inscribís.
-        </p>
-      </div>
-      <div class="confianza-certificado">
-        <img
-          src="img/img-cert.png"
-          alt="Certificado oficial"
-          class="confianza-certificado__img">
-        
+  <!-- TESTIMONIOS -->
+  <section class="testimonios-alt">
+    <div class="container">
+      <header class="testimonios-alt__header">
+        <h2>Más de 600 personas ya comenzaron su camino hacia la libertad financiera</h2>
+        <p>Ellos también empezaron sin saber nada de finanzas… y hoy están organizando sus números, eliminando deudas y aprendiendo a invertir.</p>
+      </header>
+      <div class="testimonios-alt__grid">
+        <div class="ta-card">
+          <div class="ta-card__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/img-test2.jpeg" alt="Lucía G." loading="lazy">
+          </div>
+          <div class="ta-card__body">
+            <p class="ta-card__text">Con este curso entendí por primera vez cómo manejar mi plata. Ya terminé el Excel y pude recortar gastos que no veía.</p>
+            <p class="ta-card__author">Lucía G., emprendedora – Argentina</p>
+          </div>
+        </div>
+        <div class="ta-card">
+          <div class="ta-card__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/img-test-1.jpeg" alt="Carlos R." loading="lazy">
+          </div>
+          <div class="ta-card__body">
+            <p class="ta-card__text">Me ayudó a ordenar mis ingresos, pagar deudas y hasta empecé a ahorrar e invertir. Súper claro y práctico.</p>
+            <p class="ta-card__author">Carlos R., diseñador freelance – México</p>
+          </div>
+        </div>
+        <div class="ta-card">
+          <div class="ta-card__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/img-test-3.jpeg" alt="Walter V." loading="lazy">
+          </div>
+          <div class="ta-card__body">
+            <p class="ta-card__text">No soy bueno con los números, pero el paso a paso del curso me hizo sentir seguro. Lo recomiendo totalmente.</p>
+            <p class="ta-card__author">Walter V., gerente de planta – Colombia</p>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="confianza-footer">
-      <blockquote class="confianza-testimonio">
-        “Con mi certificado conseguí +30 % más de credibilidad frente a mis clientes.”
-        <footer>— Luciana R., Alumna 2024</footer>
-      </blockquote>
 
+  <!-- BENEFICIOS -->
+  <section class="beneficios">
+    <div class="beneficios__inner container">
+      <header class="beneficios__header">
+        <h2 class="beneficios__titulo">Tomá el control total de tu dinero y construí tu libertad financiera</h2>
+        <p class="beneficios__subtitulo">Aprendé a salir de deudas, organizar tu presupuesto, ahorrar, invertir desde cero y usar herramientas que trabajan por vos.</p>
+      </header>
+      <ul class="beneficios__grid">
+        <?php 
+          $items = [
+            ['icon'=>'img-8.png','text'=>'Eliminar tus deudas sin estrés'],
+            ['icon'=>'img-9.png','text'=>'Ahorrar con objetivos claros'],
+            ['icon'=>'img-10.png','text'=>'Mentalidad financiera para toda la vida'],
+            ['icon'=>'img-11.png','text'=>'Organizar tus finanzas en un solo lugar'],
+            ['icon'=>'img-12.png','text'=>'Invertir desde cero con estrategias seguras'],
+            ['icon'=>'img-13.png','text'=>'Acceso a software exclusivo para automatizar todo'],
+          ];
+          foreach($items as $item): ?>
+          <li class="beneficio-item">
+            <img
+              class="beneficio-item__icon"
+              src="<?php echo get_template_directory_uri() . '/img/' . $item['icon']; ?>"
+              alt="<?php echo esc_attr($item['text']); ?>"
+              loading="lazy"
+            >
+            <p class="beneficio-item__texto"><?php echo esc_html($item['text']); ?></p>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+      <div class="beneficios__cta">
+        <a
+          href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
+          class="btn-beneficios"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Quiero cambiar mi realidad financiera
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- LO QUE TE LLEVAS -->
+  <section class="llevar-section">
+    <div class="container">
+      <h2 class="llevar-title">Esto es lo que te llevás al inscribirte hoy:</h2>
+      <ul class="llevar-list">
+        <?php 
+          $leads = [
+            ['img'=>'img-14.png','text'=>'Acceso inmediato al curso completo y al software exclusivo'],
+            ['img'=>'img-15.png','text'=>'Método paso a paso probado y fácil de aplicar'],
+            ['img'=>'img-16.png','text'=>'Resultados desde el primer mes con compromiso'],
+            ['img'=>'img-17.png','text'=>'Certificación digital al finalizar'],
+            ['img'=>'img-18.png','text'=>'Garantía de satisfacción de 7 días'],
+            ['img'=>'img-19.png','text'=>'Ideal para personas sin conocimientos'],
+          ];
+          foreach($leads as $lead): ?>
+          <li class="llevar-item">
+            <img
+              class="llevar-icon"
+              src="<?php echo get_template_directory_uri() . '/img/' . $lead['img']; ?>"
+              alt="<?php echo esc_attr($lead['text']); ?>"
+              loading="lazy"
+            >
+            <p class="llevar-text"><?php echo esc_html($lead['text']); ?></p>
+          </li>
+        <?php endforeach; ?>
+      </ul>
       <a
         href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
-        class="btn-confianza"
+        class="btn-llevar"
         target="_blank"
-        rel="noopener noreferrer">
-        Accedé ahora al curso
+        rel="noopener noreferrer"
+      >
+        ¡Quiero acceder a todos los beneficios ahora!
       </a>
     </div>
+  </section>
 
-  </div>
-</section> 
 
-<!-- SECCIÓN: Aprenderás paso a paso -->
-<section class="paso-paso-section">
-  <div class="container">
-    <h2 class="paso-paso-title">Esto es lo que aprenderás paso a paso</h2>
-    <div class="paso-paso-grid">
-      <!-- Módulo 1 -->
-      <div class="paso-item">
-        <img class="paso-icon" src="img/img-modulo1.png" alt="Presupuesto Inteligente">
-        <div class="paso-text">
-          <h3>Módulo 1: Las Finanzas no son tu enemigo</h3>
-          <p class="paso-sub">Cultura Financiera ✔️</p>
+  <!-- INSCRIBITE CON CONFIANZA -->
+  <section class="confianza-section">
+    <div class="confianza-container">
+      <h2 class="confianza-title">Inscribite con total confianza!</h2>
+      <div class="confianza-grid">
+        <?php 
+          $certs = [
+            ['img'=>'img-20.png','title'=>'Garantía 100% segura','text'=>'Tu inversión está protegida con una garantía de 7 días.'],
+            ['img'=>'img-21.png','title'=>'Privacidad protegida','text'=>'Tu información personal y de pago está cifrada.'],
+            ['img'=>'img-22.png','title'=>'Entrega inmediata','text'=>'Accedé al curso + software apenas te inscribís.'],
+          ];
+          foreach($certs as $c): ?>
+          <div class="confianza-item">
+            <img
+              src="<?php echo get_template_directory_uri() . '/img/' . $c['img']; ?>"
+              alt="<?php echo esc_attr($c['title']); ?>"
+              class="confianza-icon"
+              loading="lazy"
+            >
+            <h3 class="confianza-item__title"><?php echo esc_html($c['title']); ?></h3>
+            <p class="confianza-item__text"><?php echo esc_html($c['text']); ?></p>
+          </div>
+        <?php endforeach; ?>
+        <div class="confianza-certificado">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/img/img-cert.png"
+            alt="Certificado oficial"
+            class="confianza-certificado__img"
+            loading="lazy"
+          >
         </div>
       </div>
-      <!-- Módulo 2 -->
-      <div class="paso-item">
-        <img class="paso-icon" src="img/img-mod2.png" alt="Deudas Bajo Control">
-        <div class="paso-text">
-          <h3>Módulo 2: Evalua tu situacion Financiera</h3>
-          <p class="paso-sub">Salí del rojo rápido y sin culpa ✔️</p>
-        </div>
-      </div>
-      <!-- Módulo 3 -->
-      <div class="paso-item">
-        <img class="paso-icon" src="img/img-mod3.png" alt="Mentalidad Ganadora">
-        <div class="paso-text">
-          <h3>Módulo 3: Planeacion Financiera </h3>
-          <p class="paso-sub">Planificá y alcanzá tus objetivos✔️</p>
-        </div>
-      </div>
-      <!-- Módulo 4 -->
-      <div class="paso-item">
-        <img class="paso-icon" src="img/img-mod4.png" alt="Metas de Ahorro">
-        <div class="paso-text">
-          <h3>Módulo 4: Conceptos finacieros fundamentales</h3>
-          <p class="paso-sub"> Rentabilidad , riesgo , liquidez ✔️</p>
-        </div>
-      </div>
-      <!-- Módulo 5 -->
-      <div class="paso-item">
-        <img class="paso-icon" src="img/img-mod5.png" alt="Herramientas Estratégicas">
-        <div class="paso-text">
-          <h3>Módulo 5: Los numeros de tu inversion</h3>
-          <p class="paso-sub">El riesgo viene de no saber lo que estas haciendo ✔️</p>
-        </div>
-      </div>
-      <!-- Módulo 6 -->
-      <div class="paso-item">
-        <img class="paso-icon" src="img/img-mod6.png" alt="Inversiones Inteligentes">
-        <div class="paso-text">
-          <h3>Módulo 6: Inversiones Inteligentes</h3>
-          <p class="paso-sub">Hacé crecer tu plata desde cero ✔️</p>
-        </div>
-      </div>
-      <!-- Módulo 7 -->
-      <div class="paso-item">
-        <img class="paso-icon" src="img/img-mod7.png" alt="Módulo 7">
-        <div class="paso-text">
-          <h3>Impuestos</h3>
-          <p class="paso-sub"> Conosca los impuestos que paga ✔️</p>
-        </div>
-      </div>
-      <!-- Módulo 8 -->
-      <div class="paso-item">
-        <img class="paso-icon" src="img/img-mod8.png" alt="Módulo 8">
-        <div class="paso-text">
-          <h3> Contabilidad </h3>
-          <p class="paso-sub"> 12 principios basicos de la contabilidad ✔️</p>
-        </div>
-      </div>
-      <!-- Módulo 9 -->
-      <div class="paso-item">
-        <img class="paso-icon" src="img/img-mod9.png" alt="Plan de Libertad">
-        <div class="paso-text">
-          <h3>Pensá como los que la construyen</h3>
-          <p class="paso-sub">Descubrí por qué los caminos tradicionales no funcionan, cómo piensan los ricos y qué sistemas utilizan para multiplicar su dinero sin depender de un empleo. ✔️</p>
-        </div>
+      <div class="confianza-footer">
+        <blockquote class="confianza-testimonio">
+          “Con mi certificado conseguí +30 % más de credibilidad frente a mis clientes.”
+          <footer>— Luciana R., Alumna 2024</footer>
+        </blockquote>
+        <a
+          href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
+          class="btn-confianza"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Accedé ahora al curso
+        </a>
       </div>
     </div>
+  </section>
 
-    <!-- CTA -->
-    <div class="paso-paso-cta">
-      <p>¡Transformá tus finanzas desde hoy!<br>  
-        Cupos limitados • Acceso inmediato • Garantía 7 días<br>
-        Pago seguro + certificado oficial incluido
-      </p> 
-      <a href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="btn-paso-cta">
-     
-        Inscribirme ahora por USD 75
-      </a>
+
+  <!-- APRENDERÁS PASO A PASO -->
+  <section class="paso-paso-section">
+    <div class="container">
+      <h2 class="paso-paso-title">Esto es lo que aprenderás paso a paso</h2>
+      <div class="paso-paso-grid">
+        <?php 
+          $modules = [
+            ['img'=>'img-modulo1.png','title'=>'Módulo 1: Las Finanzas no son tu enemigo','sub'=>'Cultura Financiera ✔️'],
+            ['img'=>'img-mod2.png','title'=>'Módulo 2: Evalúa tu situación financiera','sub'=>'Salí del rojo rápido y sin culpa ✔️'],
+            ['img'=>'img-mod3.png','title'=>'Módulo 3: Planeación Financiera','sub'=>'Planificá y alcanzá tus objetivos ✔️'],
+            ['img'=>'img-mod4.png','title'=>'Módulo 4: Conceptos financieros fundamentales','sub'=>'Rentabilidad, riesgo, liquidez ✔️'],
+            ['img'=>'img-mod5.png','title'=>'Módulo 5: Los números de tu inversión','sub'=>'El riesgo viene de no saber lo que estás haciendo ✔️'],
+            ['img'=>'img-mod6.png','title'=>'Módulo 6: Inversiones Inteligentes','sub'=>'Hacé crecer tu plata desde cero ✔️'],
+            ['img'=>'img-mod7.png','title'=>'Módulo 7: Impuestos','sub'=>'Conocé los impuestos que pagas ✔️'],
+            ['img'=>'img-mod8.png','title'=>'Módulo 8: Contabilidad','sub'=>'12 principios básicos de la contabilidad ✔️'],
+            ['img'=>'img-mod9.png','title'=>'Módulo 9: Pensá como los que la construyen','sub'=>'Descubrí por qué los caminos tradicionales no funcionan… ✔️'],
+          ];
+          foreach($modules as $m): ?>
+          <div class="paso-item">
+            <img
+              class="paso-icon"
+              src="<?php echo get_template_directory_uri() . '/img/' . $m['img']; ?>"
+              alt="<?php echo esc_attr($m['sub']); ?>"
+              loading="lazy"
+            >
+            <div class="paso-text">
+              <h3><?php echo esc_html($m['title']); ?></h3>
+              <p class="paso-sub"><?php echo esc_html($m['sub']); ?></p>
+            </div>
+          </div>
+        <?php endforeach; ?>
+      </div>
+      <div class="paso-paso-cta">
+        <p>
+          ¡Transformá tus finanzas desde hoy!<br>
+          Cupos limitados • Acceso inmediato • Garantía 7 días<br>
+          Pago seguro + certificado oficial incluido
+        </p>
+        <a
+          href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
+          class="btn-paso-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Inscribirme ahora por USD 75
+        </a>
+      </div>
     </div>
-  </div>
-</section> 
+  </section>
 
 </main>
 
-<?php get_footer(); ?>  <!-- aquí abres PHP para llamar al footer y luego cierra -->
+<?php get_footer(); ?>
 
-<footer class="contacto-footer">
-  <div class="container contacto-inner">
-    <h2 class="contacto-title">
-      ¿Dudas o consultas?<br>
-      <span>Estamos para ayudarte</span>
-    </h2>
-
-    <a 
-      href="https://wa.me/5493518185769?text=¡Hola!%20Quiero%20más%20info"
-      class="btn-whatsapp"
-      target="_blank" rel="noopener">
-      <img 
-        src="img/img-whatsapp.png" 
-        alt="WhatsApp" 
-        class="whatsapp-icon">
-      
-      Contactar por WhatsApp
-    <a>
-
-    <div class="footer-redes">
-  <a href="https://facebook.com/tu-perfil" target="_blank" rel="noopener">
-    <img src="img/img-fb.png"
-         alt="Facebook" width="32" height="32">
-  <a>
-  <a href="https://instagram.com/tu-perfil" target="_blank" rel="noopener">
-    <img src="img/img-ig.png"
-         alt="Instagram" width="32" height="32">
-  <a>
-</div>
-
-    <p class="footer-follow">
-      Seguínos para más contenido gratuito y novedades.
-    </p>
-
-    <p class="footer-copy">
-      &copy; 2025 Educación Financiera Digital. Todos los derechos reservados.
-    </p>
-  </div>
-</footer>
-<?php wp_footer(); ?>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {

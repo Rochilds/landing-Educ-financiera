@@ -57,10 +57,7 @@
          src="https://www.facebook.com/tr?id=1794185348172977&ev=PageView&noscript=1"/>
   </noscript>
 
-  <?php
-    // Permite a WP y plugins inyectar sus propios scripts/estilos.
-    wp_head();
-  ?>
+  <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>

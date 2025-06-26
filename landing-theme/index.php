@@ -10,10 +10,10 @@ get_header();
   <!-- HERO PERSONALIZADO -->
   <section class="hero-moderno">
     <div class="hero-inner">
-      <h1 class="hero-title">Tomá el control total de tu dinero hoy</h1>
+      <h1 class="hero-title">¿Vivís endeudado y no sabés cómo salir?</h1>
       <p class="hero-subtitle">
-        Aprende a eliminar deudas, organizar tu presupuesto e invertir desde cero.
-        Incluye software exclusivo, garantía de 7 días y certificación.
+        Aprendé paso a paso a eliminar tus deudas, organizar tu presupuesto y empezar a invertir desde cero, incluso si nunca estudiaste finanzas.
+Incluye software exclusivo, garantía de 7 días y acceso inmediato.
       </p>
       <div class="hero-visual">
         <img
@@ -29,7 +29,7 @@ get_header();
         rel="noopener noreferrer"
       >
         ¡Accedé ahora por USD 75!<br>
-        <small>Últimos días con precio promocional</small>
+        <small>Cupos limitados – Oferta por tiempo limitado</small>
       </a>
       <div class="hero-rating">
         <span class="stars">★★★★★</span>

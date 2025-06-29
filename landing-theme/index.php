@@ -28,7 +28,7 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
         target="_blank"
         rel="noopener noreferrer"
       >
-        INSCRIBITE AHORA<br>
+        INSCRIBETE AHORA<br>
         <small>Cupos limitados – Oferta por tiempo limitado</small>
       </a>
       <div class="hero-rating">
@@ -169,7 +169,7 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
           target="_blank"
           rel="noopener noreferrer"
         >
-          INSCRIBITE AHORA
+          INSCRIBETE AHORA
         </a>
       </div>
     </div>
@@ -217,7 +217,7 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
   <!-- INSCRIBITE CON CONFIANZA -->
   <section class="confianza-section">
     <div class="confianza-container">
-      <h2 class="confianza-title">INSCRIBITE AHORA</h2>
+      <h2 class="confianza-title">INSCRIBETE AHORA</h2>
       <div class="confianza-grid">
         <?php 
           $certs = [
@@ -257,7 +257,7 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
           target="_blank"
           rel="noopener noreferrer"
         >
-          Accedé ahora al curso
+          INSCRIBETE AHORA
         </a>
       </div>
     </div>
@@ -308,7 +308,7 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
           target="_blank"
           rel="noopener noreferrer"
         >
-          INSCRIBITE AHORA
+          INSCRIBETE AHORA
         </a>
       </div>
     </div>

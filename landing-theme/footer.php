@@ -55,42 +55,15 @@
 
 
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  if (typeof fbq !== 'function') return;
 
-  // 1) Trackeamos sólo InitiateCheckout al hacer click en tu CTA de compra
-  document.querySelectorAll(
-    '.btn-hero, .btn-promo-card, .btn-dia, .btn-inscribite, .btn-cta, .btn-final-cta'
-  ).forEach(btn => {
-    btn.addEventListener('click', () => {
-      fbq('track', 'InitiateCheckout');
-    });
-  });
-
-  // 2) Sólo cuando la URL contenga "/thanks" disparamos el evento Purchase
-  if ( window.location.href.indexOf('/thanks') !== -1 ) {
-    // Las macros {{PROD_PRICE}} y {{PROD_CURRENCY}} Hotmart las sustituye en el thank-you
-    fbq('track', 'Purchase', {
-      value: {{PROD_PRICE}},
-      currency: '{{PROD_CURRENCY}}'
-    });
-  }
-});
-</script>
 
 <?php wp_footer(); ?>
 <script>
-  // esperamos a que todo el Pixel esté listo
-  window.addEventListener('load', () => {
-    // comprueba que fbq existe
-    if (typeof fbq !== 'function') {
-      console.warn('fbq no está definido – revisa tu Meta Pixel Code'); 
-      return;
-    }
-
-    // debug: confirmamos que estamos aquí
-    console.log('📦 Pixel listo, adjuntando listener de click…');
+window.addEventListener('load', () => {
+  if (typeof fbq !== 'function') {
+    console.warn('fbq no está definido');
+    return;
+  }
 
     // array de selectores de tus botones de checkout
     const selectors = [
@@ -102,22 +75,35 @@ document.addEventListener('DOMContentLoaded', () => {
       
     ];
 
-    // buscamos todos los botones
-    const botones = document.querySelectorAll(selectors.join(', '));
-
-    if (!botones.length) {
-      console.warn('⚠️ No encontré botones con esos selectores:', selectors);
-      return;
-    }
-    console.log(`✅ Encontrados ${botones.length} botones de checkout`);
+    // Buscamos todos los botones de pago
+  const botones = document.querySelectorAll(selectors.join(','));
+  if (!botones.length) {
+    console.warn('No encontré botones con estos selectores:', selectors);
+    return;
+  }
 
     botones.forEach(btn => {
-      btn.addEventListener('click', () => {
-        console.log('🔔 Click en checkout – disparo InitiateCheckout');
-        fbq('track', 'InitiateCheckout');
-      });
+    btn.addEventListener('click', e => {
+      e.preventDefault();                     // detenemos la navegación inmediata
+      fbq('track', 'InitiateCheckout');       // disparamos tu evento
+      console.log('🔔 InitiateCheckout enviado');
+
+      // esperamos un pelín y luego redirigimos
+      setTimeout(() => {
+        window.location.href = btn.href;
+      }, 300);
     });
   });
+
+  // Si estamos en la página de gracias, disparamos Purchase
+  if ( window.location.href.includes('/thanks') ) {
+    fbq('track', 'Purchase', {
+      value: {{PROD_PRICE}},
+      currency: '{{PROD_CURRENCY}}'
+    });
+    console.log('✅ Purchase enviado');
+  }
+});
 </script>
 </body>
 </html>

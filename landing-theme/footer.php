@@ -59,45 +59,50 @@
 
 <?php wp_footer(); ?>
 <script>
-  window.addEventListener('load', function() {
-    // 1) Asegurémonos de que el pixel esté cargado
-    if (typeof fbq !== 'function') {
-      console.warn('fbq no está definido – revisa tu Meta Pixel Code');
-      return;
-    }
+window.addEventListener('load', () => {
+  if (typeof fbq !== 'function') {
+    console.warn('fbq no está definido – revisa tu Meta Pixel Code');
+    return;
+  }
 
-    // 2) Define aquí los selectores de todos tus botones de checkout
-    var selectors = [
-      '.hero-cta',
-      '.btn-beneficios',
-      '.btn-llevar',
-      '.btn-confianza',
-      '.btn-paso-cta'
-    ];
-
-    // 3) Recógelos todos
-    var botones = document.querySelectorAll(selectors.join(','));
-    if (botones.length === 0) {
-      console.warn('⚠️ No encontré botones con estos selectores:', selectors);
-      return;
-    }
-    console.log('✅ Encontrados ' + botones.length + ' botones de checkout');
-
-    // 4) Para cada botón, prevén la navegación, dispara InitiateCheckout y redirige
-    botones.forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
+  // 1) Trackeamos InitiateCheckout al hacer click en tus CTAs de pago
+  const selectors = [
+    '.her-cta',
+    '.btn-beneficios',
+    '.btn-llevar',
+    '.btn-confianza',
+    '.btn-paso-cta'
+  ];
+  const botones = document.querySelectorAll(selectors.join(','));
+  if (!botones.length) {
+    console.warn('⚠️ No encontré botones con estos selectores:', selectors);
+  } else {
+    console.log(`✅ Encontrados ${botones.length} botones de checkout`);
+    botones.forEach(btn => {
+      btn.addEventListener('click', e => {
         e.preventDefault();
         fbq('track', 'InitiateCheckout');
         console.log('🔔 InitiateCheckout enviado');
-        // Le damos un breve delay para que el pixel tenga tiempo de enviar
-        setTimeout(function(){
+        setTimeout(() => {
           window.location.href = btn.href;
         }, 300);
       });
     });
-  });
-</script>
+  }
 
+  // 2) Si la URL contiene "/thanks", disparamos Purchase
+  if ( window.location.href.includes('/thanks') ) {
+    // Sustituye estas variables si no usas Hotmart
+    const valor = /* aquí tu precio dinámico o fijo */;
+    const moneda = 'USD';
+    fbq('track', 'Purchase', {
+      value: valor,
+      currency: moneda
+    });
+    console.log('✅ Purchase enviado');
+  }
+});  // <- cierre de addEventListener
+</script>
 
 </body>
 </html>

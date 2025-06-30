@@ -164,7 +164,7 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
       </ul>
       <div class="beneficios__cta">
         <a
-          href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
+          href="https://pay.hotmart.com/I39278939V?checkoutMode=10&checkoutCustomMode=1&bid=1599428231631&hideBillet=1&offDiscount=MONOPOLY"
           class="btn-beneficios"
           target="_blank"
           rel="noopener noreferrer"
@@ -203,7 +203,7 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
         <?php endforeach; ?>
       </ul>
       <a
-        href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
+        href="https://pay.hotmart.com/I39278939V?checkoutMode=10&checkoutCustomMode=1&bid=1599428231631&hideBillet=1&offDiscount=MONOPOLY"
         class="btn-llevar"
         target="_blank"
         rel="noopener noreferrer"
@@ -252,7 +252,7 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
           <footer>— Luciana R., Alumna 2024</footer>
         </blockquote>
         <a
-          href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
+          href="https://pay.hotmart.com/I39278939V?checkoutMode=10&checkoutCustomMode=1&bid=1599428231631&hideBillet=1&offDiscount=MONOPOLY"
           class="btn-confianza"
           target="_blank"
           rel="noopener noreferrer"
@@ -303,7 +303,7 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
           Pago seguro + certificado oficial incluido
         </p>
         <a
-          href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
+          href="https://pay.hotmart.com/I39278939V?checkoutMode=10&checkoutCustomMode=1&bid=1599428231631&hideBillet=1&offDiscount=MONOPOLY"
           class="btn-paso-cta"
           target="_blank"
           rel="noopener noreferrer"

@@ -23,7 +23,7 @@
     </a>
 
     <div class="footer-redes">
-      <a href="https://facebook.com/tu-perfil" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.facebook.com/profile.php?id=61552809742760" target="_blank" rel="noopener noreferrer">
         <img 
           src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/img-fb.png" 
           alt="Facebook" 
@@ -31,7 +31,7 @@
           loading="lazy"
         >
       </a>
-      <a href="https://instagram.com/tu-perfil" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/finanzasinteligente7/" target="_blank" rel="noopener noreferrer">
         <img 
           src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/img-ig.png" 
           alt="Instagram" 

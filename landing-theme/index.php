@@ -23,7 +23,7 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
         >
       </div>
       <a
-        href="https://pay.hotmart.com/I39278939V?ref=W87801197P"
+        href="https://pay.hotmart.com/I39278939V?checkoutMode=10&checkoutCustomMode=1&bid=1599428231631&hideBillet=1&offDiscount=MONOPOLY"
         class="hero-cta"
         target="_blank"
         rel="noopener noreferrer"

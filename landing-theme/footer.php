@@ -94,12 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // array de selectores de tus botones de checkout
     const selectors = [
-      '.btn-hero',
-      '.btn-promo-card',
-      '.btn-dia',
-      '.btn-inscribite',
-      '.btn-cta',
-      '.btn-final-cta'
+      '.her-cta',
+      '.btn-beneficios',
+      '.btn-llevar',
+      '.btn-confianza',
+      '.btn-paso-cta'
+      
     ];
 
     // buscamos todos los botones

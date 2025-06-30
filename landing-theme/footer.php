@@ -91,14 +91,7 @@ window.addEventListener('load', () => {
     });
   });
 
-  if ( window.location.href.includes('/thanks') ) {
-    fbq('track', 'Purchase', {
-      value: {{PROD_PRICE}},
-      currency: '{{PROD_CURRENCY}}'
-    });
-    console.log('✅ Purchase enviado');
-  }
-});
+  
 </script>
 
 </body>

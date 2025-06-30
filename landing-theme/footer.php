@@ -65,37 +65,32 @@ window.addEventListener('load', () => {
     return;
   }
 
-    // array de selectores de tus botones de checkout
-    const selectors = [
-      '.her-cta',
-      '.btn-beneficios',
-      '.btn-llevar',
-      '.btn-confianza',
-      '.btn-paso-cta'
-      
-    ];
+  // CORREGIDO: selectors con la clase hero-cta
+  const selectors = [
+    '.hero-cta',
+    '.btn-beneficios',
+    '.btn-llevar',
+    '.btn-confianza',
+    '.btn-paso-cta'
+  ];
 
-    // Buscamos todos los botones de pago
   const botones = document.querySelectorAll(selectors.join(','));
   if (!botones.length) {
     console.warn('No encontré botones con estos selectores:', selectors);
     return;
   }
 
-    botones.forEach(btn => {
+  botones.forEach(btn => {
     btn.addEventListener('click', e => {
-      e.preventDefault();                     // detenemos la navegación inmediata
-      fbq('track', 'InitiateCheckout');       // disparamos tu evento
+      e.preventDefault();
+      fbq('track', 'InitiateCheckout');
       console.log('🔔 InitiateCheckout enviado');
-
-      // esperamos un pelín y luego redirigimos
       setTimeout(() => {
         window.location.href = btn.href;
       }, 300);
     });
   });
 
-  // Si estamos en la página de gracias, disparamos Purchase
   if ( window.location.href.includes('/thanks') ) {
     fbq('track', 'Purchase', {
       value: {{PROD_PRICE}},
@@ -105,5 +100,6 @@ window.addEventListener('load', () => {
   }
 });
 </script>
+
 </body>
 </html>

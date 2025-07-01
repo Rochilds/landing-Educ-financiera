@@ -17,7 +17,7 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
       </p>
       <div class="hero-visual">
         <img
-          src="<?php echo get_template_directory_uri(); ?>/img/img-2.png"
+          src="<?php echo get_template_directory_uri(); ?>/img/img-prueba.png"
           alt="Laptop + App móvil"
           loading="lazy"
         >

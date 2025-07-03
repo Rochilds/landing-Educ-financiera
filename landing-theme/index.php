@@ -28,7 +28,7 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
         target="_blank"
         rel="noopener noreferrer"
       >
-        INSCRIBETE AHORA<br>
+        Inscribite ahora con 50% OFF – tiempo limitado<br>
         <small>Cupos limitados – Oferta por tiempo limitado</small>
       </a>
       <div class="hero-rating">

@@ -356,6 +356,32 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
       </p>
     </div>
 
+     <!-- Item “¿El pago es seguro?” -->
+    <div class="faq-item">
+      <h3 class="faq-question">¿El pago es seguro?</h3>
+      <p class="faq-answer">
+        Sí. Las formas de pago disponibles que brinda Hotmart son las más seguras y utilizadas por las tiendas online.
+      </p>
+    </div>
+
+    <!-- Item “¿Mis datos están protegidos?” -->
+    <div class="faq-item">
+      <h3 class="faq-question">¿Mis datos están protegidos?</h3>
+      <p class="faq-answer">
+        Sí. Nosotros no tenemos acceso a tus datos bancarios, solo a tu nombre y tu correo. De la misma manera, ni Hotmart ni nosotros vendemos tus datos o hacemos mal uso de ellos.
+      </p>
+    </div>
+
+    <!-- Item “¿Cómo sé que realmente obtengo mi dinero de vuelta…?” -->
+    <div class="faq-item">
+      <h3 class="faq-question">
+        ¿Cómo sé que realmente obtengo mi dinero de vuelta en caso de solicitar una devolución por garantía?
+      </h3>
+      <p class="faq-answer">
+        Hotmart es quien se encarga de tramitar las devoluciones, por lo que cuando solicitas una devolución dentro del periodo de garantía es Hotmart personalmente quien se encarga de reintegrarte tu dinero.
+      </p>
+    </div>
+
   </div>
  </section>
 

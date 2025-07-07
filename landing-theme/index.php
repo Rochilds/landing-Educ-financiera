@@ -331,6 +331,31 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
         No. En el momento de pago te sale el equivalente de tu moneda local y eso es lo que se te cobra.
       </p>
     </div>
+
+     <!-- Item 3 -->
+    <div class="faq-item">
+      <h3 class="faq-question">Me sale que el precio es superior al que había leído. ¿Por qué?</h3>
+      <p class="faq-answer">
+        En algunos países, como Argentina, el gobierno te cobra un impuesto por las compras online. En muchos países tal impuesto no existe de momento, por lo que el precio es el mencionado anteriormente, pero si vives en uno de esos pocos países donde este impuesto sí existe, está es la razón por la que el precio es superior al que mencionamos.
+      </p>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="faq-item">
+      <h3 class="faq-question">¿Cómo se paga?</h3>
+      <p class="faq-answer">
+        Se paga a través de Hotmart, una empresa internacional de educación. Hotmart brinda varias formas de pago dependiendo tu país. Estas son las formas de pago para estos países:<br>
+        <strong>Colombia:</strong> Tarjeta de crédito, Baloto, Cuenta de Hotmart, PayPal y PSE.<br>
+        <strong>Argentina:</strong> Tarjeta de crédito, Cupón de pago, Cuenta de Hotmart y PayPal.<br>
+        <strong>México:</strong> Tarjeta de crédito, Tarjeta de débito, Oxxo, Cuenta de Hotmart y PayPal.<br>
+        <strong>Estados Unidos:</strong> Tarjeta de crédito, Cuenta de Hotmart, PayPal, PayPal Credit, Samsung Pay y Google Pay.<br>
+        <strong>Chile:</strong> Tarjeta de crédito, Sencillito, Cuenta de Hotmart y PayPal.<br>
+        <strong>España:</strong> Tarjeta de crédito, Cuenta de Hotmart, PayPal, Samsung Pay, Google Pay y Transferencia bancaria online.<br>
+        <strong>Paraguay:</strong> Tarjeta de crédito, Cuenta de Hotmart, PayPal, Samsung Pay y Google Pay.<br>
+        <strong>Perú:</strong> Tarjeta de crédito, Pago Efectivo, Cuenta de Hotmart y PayPal.
+      </p>
+    </div>
+
   </div>
  </section>
 

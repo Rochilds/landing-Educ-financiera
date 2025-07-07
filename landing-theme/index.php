@@ -312,7 +312,27 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
         </a>
       </div>
     </div>
-  </section>
+  </section> 
+
+  <section class="faq-section">
+  <div class="container">
+    <h2 class="faq-title">Preguntas frecuentes</h2>
+
+    <div class="faq-item">
+      <h3 class="faq-question">¿Tienen una política de devoluciones?</h3>
+      <p class="faq-answer">
+        ¡Sí! Si sientes que nuestro curso no cumplió tus expectativas o que no has aprendido nada diferente puedes hacer uso de tu garantía de los primeros 7 días y te reintegraremos el 100 % de tu dinero.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">¿Necesito tener dólares para comprar el curso?</h3>
+      <p class="faq-answer">
+        No. En el momento de pago te sale el equivalente de tu moneda local y eso es lo que se te cobra.
+      </p>
+    </div>
+  </div>
+ </section>
 
 </main>
 

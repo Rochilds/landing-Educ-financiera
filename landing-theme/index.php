@@ -380,7 +380,35 @@ Incluye software exclusivo, garantía de 7 días y acceso inmediato.
       <p class="faq-answer">
         Hotmart es quien se encarga de tramitar las devoluciones, por lo que cuando solicitas una devolución dentro del periodo de garantía es Hotmart personalmente quien se encarga de reintegrarte tu dinero.
       </p>
-    </div>
+    </div> 
+
+    <!-- Nuevo ítem: ¿Por dónde se compra y se dicta el curso? -->
+<div class="faq-item">
+  <h3 class="faq-question">¿Por dónde se compra y se dicta el curso?</h3>
+  <p class="faq-answer">
+    El curso se compra en Hotmart (a través de las opciones disponibles para cada país).  
+    El curso también se dicta en la plataforma interactiva de Hotmart.
+  </p>
+</div>
+
+<!-- Nuevo ítem: ¿El curso tiene algún horario específico? -->
+<div class="faq-item">
+  <h3 class="faq-question">¿El curso tiene algún horario específico?</h3>
+  <p class="faq-answer">
+    No. Puedes acceder a las clases del curso en el horario que desees.  
+    Puedes repetir las clases una y otra vez.
+  </p>
+</div>
+
+<!-- Nuevo ítem: ¿Tengo acceso al curso hasta cierta fecha? -->
+<div class="faq-item">
+  <h3 class="faq-question">¿Tengo acceso al curso hasta cierta fecha?</h3>
+  <p class="faq-answer">
+    No. Tienes acceso de por vida al curso.  
+    También tienes acceso a las mejoras y actualizaciones futuras sin cobros adicionales.
+  </p>
+</div>
+
 
   </div>
  </section>

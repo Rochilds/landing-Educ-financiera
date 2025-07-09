@@ -54,50 +54,45 @@
 
 <script>
 window.addEventListener('load', () => {
-  if (typeof fbq !== 'function') {
-    console.warn('⚠️ fbq no está definido – revisa tu Meta Pixel Code');
-    return;
-  }
+  if (typeof fbq !== 'function') return console.warn('fbq no está definido');
 
-  // Selectores corregidos (.hero-cta en lugar de .her-cta)
   const selectors = [
-    '.hero-cta',
+    '.her-cta',
     '.btn-beneficios',
     '.btn-llevar',
     '.btn-confianza',
     '.btn-paso-cta'
   ];
   const botones = document.querySelectorAll(selectors.join(','));
-  if (!botones.length) {
-    console.warn('⚠️ No encontré botones con estos selectores:', selectors);
-  } else {
-    console.log(`✅ Encontrados ${botones.length} botones de checkout`);
-    botones.forEach(btn => {
-      btn.addEventListener('click', e => {
-        e.preventDefault();                   // detenemos la navegación
-        fbq('track', 'InitiateCheckout');     // disparamos el evento
-        console.log('🔔 InitiateCheckout enviado');
+  if (!botones.length) return console.warn('⚠️ No encontré botones de checkout.');
 
-        // abrimos en nueva pestaña tras un pequeño delay
-        setTimeout(() => {
-          // si el enlace ya tenía target="_blank", utilizamos ese target
-          const target = btn.target === '_blank' ? '_blank' : '_self';
-          window.open(btn.href, target);
-        }, 300);
+  botones.forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      // Disparamos InitiateCheckout incluyendo currency y opcionalmente value
+      fbq('track', 'InitiateCheckout', {
+        value: 37,        // ajusta o reemplaza con tu variable dinámica
+        currency: 'USD'   // ¡3 letras mayúsculas!
       });
+      console.log('🔔 InitiateCheckout enviado con currency');
+
+      setTimeout(() => {
+        window.location.href = btn.href;
+      }, 300);
     });
-  }
+  });
 
   // Purchase en página de gracias
   if ( window.location.href.includes('/thanks') ) {
     fbq('track', 'Purchase', {
-      value: 37,          // o tu variable dinámica
+      value: 37,
       currency: 'USD'
     });
     console.log('✅ Purchase enviado');
   }
 });
 </script>
+
 
 </body>
 </html>
